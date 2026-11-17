@@ -1,0 +1,22 @@
+<!-- صورة تجريبية لباويتي: بساتين النخيل والرمال. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Bawiti palm groves">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc4df"/><stop offset="1" stop-color="#f8dfad"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#sky)"/>
+  <circle cx="760" cy="140" r="60" fill="#fff2bd"/>
+  <path d="M0 470 Q220 430 450 470 T900 450 V700 H0Z" fill="#e2bd80"/>
+  <g stroke="#8a5a2e" stroke-width="9" fill="none">
+    <path d="M160 520 Q180 360 155 250"/><path d="M330 530 Q350 370 330 260"/>
+    <path d="M560 520 Q580 360 560 250"/><path d="M740 530 Q760 370 740 270"/>
+  </g>
+  <g fill="#3f7d3a">
+    <path d="M155 250 q-85-45-120 10 q85 8 120-10Z"/><path d="M155 250 q85-45 120 10 q-85 8-120-10Z"/>
+    <path d="M330 260 q-85-45-120 10 q85 8 120-10Z"/><path d="M330 260 q85-45 120 10 q-85 8-120-10Z"/>
+    <path d="M560 250 q-85-45-120 10 q85 8 120-10Z"/><path d="M560 250 q85-45 120 10 q-85 8-120-10Z"/>
+    <path d="M740 270 q-85-45-120 10 q85 8 120-10Z"/><path d="M740 270 q85-45 120 10 q-85 8-120-10Z"/>
+  </g>
+  <path d="M0 640 Q230 600 450 640 T900 620 V700 H0Z" fill="#c99355"/>
+</svg>

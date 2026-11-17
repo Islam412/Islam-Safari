@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Islam Safari
 
-## Getting Started
+موقع سياحي لرحلات الواحات البحرية والصحراء البيضاء، مبني بـ Next.js 16 + React 19 + Tailwind CSS v4.
 
-First, run the development server:
+## المميزات
+
+- سبع لغات: العربية، الإنجليزية، الألمانية، الإيطالية، الروسية، الإسبانية، التركية.
+- وضع فاتح وغامق مع حفظ اختيار الزائر.
+- حركات وتأثيرات ضوئية باستخدام framer-motion و CSS.
+- صفحات: الرئيسية، البرامج، تفاصيل البرنامج، من نحن، المعرض، تواصل معنا.
+- ثلاثة برامج سياحية مبنية على معالم الواحات البحرية (الصحراء البيضاء، عين هيز، جبل الكريستال، الصحراء السوداء، العجابات، باويتي).
+- معرض صور تفاعلي مع فلاتر ولايت بوكس وبطاقة فيديو تجريبية.
+- نموذج تواصل يفتح رسالة جاهزة في واتساب (بدون الحاجة إلى backend).
+
+## التشغيل
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ثم افتح http://localhost:3000 — سيتم تحويلك تلقائياً إلى `/ar`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## الأوامر
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev        # خادم التطوير
+npm run build      # بناء الإنتاج
+npm run start      # تشغيل نسخة الإنتاج
+npm run lint       # فحص ESLint
+npm run typecheck  # فحص TypeScript
+```
 
-## Learn More
+## أهم الملفات
 
-To learn more about Next.js, take a look at the following resources:
+- `messages/*.json` — كل نصوص الموقع مترجمة للغات السبع.
+- `src/data/content.ts` — بيانات الأماكن والبرامج والمعرض وأسماء الصور.
+- `src/i18n/routing.ts` — تعريف اللغات والإعدادات المشتركة.
+- `src/proxy.ts` — توجيه الزائر إلى اللغة المناسبة (يسمى middleware في الإصدارات الأقدم).
+- `src/lib/site.ts` — روابط واتساب والسوشيال ورابط البورتفوليو.
+- `public/images/*.svg` — صور تجريبية قابلة للاستبدال بصورك الحقيقية بنفس الأسماء.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## قبل النشر
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. استبدل روابط واتساب والفيسبوك وتيك توك والإنستاجرام في `src/lib/site.ts` بحساباتك الفعلية.
+2. استبدل ملفات SVG في `public/images/` بصور التخيم والرحلات الحقيقية (يفضل JPEG/WebP بنفس الاسم مع تعديل الامتداد في `src/data/content.ts`).
+3. أضف ملف الفيديو أو رابطه داخل مكوّن المعرض `src/components/gallery/GalleryGrid.tsx`.
+4. عدّل الأسعار والمدد في ملفات `messages/*.json` داخل قسم `Programs.items` حسب موسمك.
 
-## Deploy on Vercel
+## التطوير
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+تم التطوير بواسطة المهندس إسلام حمدي — https://islam-portfolio-phi.vercel.app/

@@ -1,0 +1,319 @@
+{
+  "Meta": {
+    "title": "Islam Safari | Oasen- und Wüstenreisen in Bahariya",
+    "description": "Camping und 4x4-Abenteuer in der Bahariya-Oase, der Weißen Wüste, der Heiz-Quelle und dem Kristallberg mit lokalen Führern."
+  },
+  "Common": {
+    "day": "Tag",
+    "days": "Tage",
+    "night": "Nacht",
+    "nights": "Nächte",
+    "perPerson": "pro Person",
+    "from": "Ab",
+    "viewDetails": "Details ansehen",
+    "book": "Jetzt buchen",
+    "back": "Zurück",
+    "all": "Alle",
+    "explore": "Mehr entdecken"
+  },
+  "Nav": {
+    "home": "Startseite",
+    "programs": "Programme",
+    "about": "Über uns",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "bookNow": "Reise buchen",
+    "menu": "Menü",
+    "closeMenu": "Schließen",
+    "language": "Sprache",
+    "toggleTheme": "Dunkelmodus umschalten"
+  },
+  "Hero": {
+    "badge": "Ein echtes Wüstenabenteuer im Herzen Ägyptens",
+    "title": "Bahariya-Oase",
+    "titleAccent": "hier beginnt die Geschichte",
+    "subtitle": "Entdecke die Weiße Wüste, warme Quellen und Camping unter Sternen mit Islam Safari. Reisen, die bis ins kleinste Detail durchdacht sind.",
+    "primary": "Programme entdecken",
+    "secondary": "Kontaktiere uns",
+    "scroll": "Scrollen zum Entdecken",
+    "chip1": "Klimatisiertes 4x4",
+    "chip2": "Erfahrener Guide",
+    "chip3": "Schlafen unter Sternen",
+    "stat1Value": "7",
+    "stat1Label": "Sprachen für unsere Gäste",
+    "stat2Value": "4x4",
+    "stat2Label": "Abenteuer in jeder Reise",
+    "stat3Value": "∞",
+    "stat3Label": "Sterne am Wüstenhimmel"
+  },
+  "Home": {
+    "placesBadge": "Schönste Ziele",
+    "placesTitle": "Orte, die man gesehen haben muss",
+    "placesSubtitle": "Von weißen Kalkformationen bis zu warmen Quellen – jede Ecke der Bahariya-Oase erzählt eine andere Geschichte.",
+    "campBadge": "Camping-Erlebnis",
+    "campTitle": "Schlafe unter einem klaren Wüstenhimmel",
+    "campText": "Bequeme Zelte, ein Grillabend am Feuer und eine Stille, in der dein Herz spricht, bevor die Sterne es tun. Das ist der Moment, den man nie vergisst.",
+    "campCta": "Galerie ansehen",
+    "programsBadge": "Unsere Programme",
+    "programsTitle": "Reisen zum Erleben",
+    "programsSubtitle": "Wähle zwischen einer kurzen Übernachtung, einem zweitägigen Wüstenabenteuer oder einem ganzen Tag zwischen den Oasen.",
+    "viewAll": "Alle Programme",
+    "whyBadge": "Warum Islam Safari?",
+    "whyTitle": "Kleine Details machen große Reisen",
+    "features": {
+      "localGuide": { "title": "Lokale Guides", "text": "Wir kennen jeden Weg und jeden Felsen in der Westlichen Wüste und erzählen dir ihre Geschichten." },
+      "comfort": { "title": "Komfort ohne Abstriche", "text": "Klimatisierte Autos, ausgestattete Zelte und frische Mahlzeiten auf jeder Reise." },
+      "safety": { "title": "Sicherheit bei jedem Schritt", "text": "Geschulte Wüstenteams mit Wasser und der kompletten Ausrüstung." },
+      "memories": { "title": "Momente fürs Fotoalbum", "text": "Gut gewählte Sonnenuntergänge und -aufgänge für die schönsten Bilder." }
+    },
+    "places": {
+      "whiteDesert": { "title": "Weiße Wüste", "description": "Weiße Kreideskulpturen wie ein Freilichtmuseum – besonders magisch beim Sonnenuntergang." },
+      "heizSpring": { "title": "Heiz-Quelle", "description": "Warme Naturquellen mitten im Sand, ideal zum Entspannen nach einer langen Fahrt." },
+      "crystalMountain": { "title": "Kristallberg", "description": "Glitzernde Quarzfelsen, die in der Sonne wie riesige Kristalle leuchten." },
+      "blackDesert": { "title": "Schwarze Wüste", "description": "Dunkle Vulkanhügel, die einen faszinierenden Kontrast zum goldenen Sand bilden." },
+      "agabat": { "title": "El Agabat", "description": "Windgeformte Felsgänge, einer der schönsten Fotostopps auf der Route." },
+      "bawiti": { "title": "Bawiti", "description": "Hauptstadt der Bahariya-Oase mit lokalen Märkten, Cafés und Palmenhainen bis zum Horizont." }
+    },
+    "ctaTitle": "Bereit für dein nächstes Abenteuer?",
+    "ctaText": "Sag uns deine Termine und Wünsche – wir gestalten ein Programm, das genau zu dir passt.",
+    "ctaButton": "Reise planen"
+  },
+  "Programs": {
+    "badge": "Reiseprogramme",
+    "title": "Wähle dein nächstes Abenteuer",
+    "subtitle": "Jedes Programm vereint das Beste der Bahariya-Oase und der Wüste – mit viel Zeit zum Entspannen und Fotografieren.",
+    "duration": "Dauer",
+    "highlights": "Highlights",
+    "itinerary": "Tagesablauf",
+    "included": "Inklusive",
+    "excluded": "Nicht inklusive",
+    "priceNote": "Preise sind Richtwerte und variieren je nach Gruppengröße und Saison.",
+    "bookNote": "Kontaktiere uns, um Termin und Details zu bestätigen.",
+    "notFound": "Programm nicht gefunden",
+    "notFoundText": "Der Link hat sich möglicherweise geändert. Sieh dir alle Programme an und wähle das passende.",
+    "back": "Zurück zu den Programmen",
+    "dayLabel": "Tag",
+    "items": {
+      "oasis-and-desert-1-night": {
+        "title": "1 Nacht in Oase und Wüste",
+        "subtitle": "Kairo – Bahariya – Weiße Wüste",
+        "summary": "Ausgewogene Mischung aus Abenteuer und Erholung: warme Quellen, faszinierende weiße Felsen und eine Nacht unter Sternen.",
+        "durationLabel": "2 Tage / 1 Nacht",
+        "highlights": [
+          "Bad in der warmen Heiz-Quelle",
+          "Magischer Sonnenuntergang in der Weißen Wüste",
+          "Grillabend am Lagerfeuer",
+          "Kristallberg und Schwarze Wüste"
+        ],
+        "days": [
+          {
+            "title": "Tag 1: Kairo – Bahariya – Weiße Wüste",
+            "activities": [
+              "Abfahrt von Kairo in einem klimatisierten Fahrzeug in die Westliche Wüste.",
+              "Ankunft in Bawiti, dem Hauptort der Bahariya-Oase.",
+              "Wechsel auf 4x4-Fahrzeuge für die Weiterfahrt zur Weißen Wüste.",
+              "Stopp in der kleinen Oase Heiz zum Mittagessen und Entspannen in einer natürlichen Warmquelle.",
+              "Weiterfahrt mit Stopp in El Agabat, bekannt für seine beeindruckenden Felsformationen.",
+              "Ankunft in der Weißen Wüste, wo die Kalkformationen beim Sonnenuntergang eine magische Landschaft schaffen.",
+              "Grillabend am Feuer und Übernachtung im Camp unter Sternen."
+            ]
+          },
+          {
+            "title": "Tag 2: Weiße Wüste – Bahariya – Kairo",
+            "activities": [
+              "Frühstück im Camp.",
+              "Freie Zeit zum Erkunden der faszinierenden Felsformationen der Weißen Wüste.",
+              "Rückfahrt nach Bahariya mit Stopps am Kristallberg mit seinen Quarzkristallen und in der Schwarzen Wüste mit ihrer Vulkanlandschaft.",
+              "Freie Zeit in Bawiti für lokale Märkte und traditionelle Souvenirs.",
+              "Rückkehr nach Kairo."
+            ]
+          }
+        ],
+        "included": [
+          "Transfer ab Kairo und zurück im klimatisierten Fahrzeug",
+          "4x4-Safari mit Fahrer und Guide",
+          "Camp-Übernachtung, Frühstück und Abendessen",
+          "Mineralwasser während der Reise"
+        ],
+        "excluded": [
+          "Persönliche Aktivitäten und Trinkgeld",
+          "Mittagessen an beiden Tagen, sofern nicht angegeben",
+          "Reiseversicherung"
+        ]
+      },
+      "two-nights-oasis-adventure": {
+        "title": "2-Nächte-Wüstenabenteuer in der Oase",
+        "subtitle": "Lokale Tour + Weiße Wüste",
+        "summary": "Eine intensive Reise mit Oasen-Höhepunkten, Wüstencamping und einem unvergesslichen Sonnenaufgang.",
+        "durationLabel": "3 Tage / 2 Nächte",
+        "highlights": [
+          "Natürliche Pyramide und Salzersee",
+          "Entspannung in den heißen Quellen von Heiz",
+          "Eine ganze Nacht unter Sternen",
+          "Frühstück bei Sonnenaufgang in der Wüste"
+        ],
+        "days": [
+          {
+            "title": "Tag 1: Kairo – Bahariya-Oase",
+            "activities": [
+              "Abfahrt von Kairo in die Westliche Wüste.",
+              "Ankunft in der Bahariya-Oase und Check-in im Hotel.",
+              "Mittagessen und 4x4-Tour zu natürlicher Pyramide, langem Salzersee, Palmenhain und historischem Engelsberg.",
+              "Rückkehr zum Hotel für Abendessen und Übernachtung."
+            ]
+          },
+          {
+            "title": "Tag 2: Bahariya-Oase – Weiße Wüste",
+            "activities": [
+              "Frühstück im Hotel, dann Abfahrt zur Weißen Wüste.",
+              "Fahrt durch die Schwarze Wüste mit Stopp in Heiz zum Entspannen in den Naturquellen.",
+              "Besuch des Kristallbergs und der eindrucksvollen El-Agabat-Formationen.",
+              "Ankunft in der Weißen Wüste, wo die Felsen beim Sonnenuntergang magisch wirken.",
+              "Grillabend am Feuer unter Sternenhimmel.",
+              "Übernachtung im Camp mitten in der Wüste."
+            ]
+          },
+          {
+            "title": "Tag 3: Weiße Wüste – Kairo",
+            "activities": [
+              "Sonnenaufgang mit unvergesslichem Frühstück in der Wüste.",
+              "Freie Zeit zum Erkunden der natürlichen Formationen der Weißen Wüste.",
+              "Rückkehr zur Bahariya-Oase.",
+              "Transfer zurück nach Kairo – Ende eines unvergesslichen Abenteuers."
+            ]
+          }
+        ],
+        "included": [
+          "Transfer ab Kairo und zurück",
+          "Eine Nacht im Hotel in Bahariya und eine Nacht im Wüstencamp",
+          "Alle Mahlzeiten, sofern nicht anders angegeben",
+          "4x4-Touren mit lokalem Guide"
+        ],
+        "excluded": [
+          "Persönliche Ausgaben",
+          "Eintrittsgebühren, wo zutreffend",
+          "Reiseversicherung"
+        ]
+      },
+      "oasis-day-escape": {
+        "title": "Ganztag in der Bahariya-Oase",
+        "subtitle": "Tagesausflug für Gäste mit wenig Zeit",
+        "summary": "Das Beste der Oase an einem Tag: Quellen, Palmen, Felsformationen und ein Wüsten-Sonnenuntergang vor der Rückfahrt.",
+        "durationLabel": "1 Tag ohne Übernachtung",
+        "highlights": [
+          "Natürliche Pyramide und Salzersee",
+          "Palmenhaine und Engelsberg",
+          "Entspannung an der Heiz-Quelle",
+          "Sonnenuntergang vor der Rückkehr"
+        ],
+        "days": [
+          {
+            "title": "Tag 1: Kairo – Bahariya-Oase – Kairo",
+            "activities": [
+              "Frühe Abfahrt von Kairo im klimatisierten Fahrzeug.",
+              "Besuch der natürlichen Pyramide, des Salzersees, der Palmenhaine und des Engelsbergs.",
+              "Lokales Mittagessen in Bawiti.",
+              "Entspannung in den warmen Quellen von Heiz.",
+              "Weiterfahrt zu El Agabat und der Schwarzen Wüste zum Sonnenuntergang.",
+              "Rückkehr nach Kairo am Abend."
+            ]
+          }
+        ],
+        "included": [
+          "Hin- und Rücktransfer ab Kairo",
+          "4x4-Tour mit lokalem Guide",
+          "Mittagessen und Mineralwasser"
+        ],
+        "excluded": [
+          "Übernachtung",
+          "Persönliche Ausgaben",
+          "Reiseversicherung"
+        ]
+      }
+    }
+  },
+  "About": {
+    "badge": "Über uns",
+    "title": "Wir lieben diese Wüste – und kennen sie gut",
+    "lead": "Islam Safari ist ein lokales Team für Reisen in die Bahariya-Oase und die Westliche Wüste. Jede Reise bauen wir um die Orte herum, die wir lieben und detailgenau kennen.",
+    "paragraph1": "Die Geschichte begann in Bawiti. Dort haben wir gelernt, dass die schönsten Momente nicht im Programm stehen: die Wärme des Wassers in Heiz, die Farbe der Felsen vor dem Sonnenuntergang und die Stille der Nacht unter Sternen.",
+    "paragraph2": "Deshalb verbinden unsere Programme Entdeckung und Komfort – mit ausgestatteten Fahrzeugen und Guides, die das Gelände kennen und Umwelt und Einheimische respektieren.",
+    "stat1Value": "100%",
+    "stat1Label": "lokale Erfahrung",
+    "stat2Value": "7",
+    "stat2Label": "Sprachen für Gäste",
+    "stat3Value": "24/7",
+    "stat3Label": "Support vor und nach der Reise",
+    "values": {
+      "passion": { "title": "Leidenschaft für die Wüste", "text": "Wir wählen jeden Stopp, weil wir ihn wirklich lieben – nicht nur, weil er auf der Karte steht." },
+      "detail": { "title": "Liebe zum Detail", "text": "Vom Sonnenuntergang bis zur Wärme deines Zeltes planen wir jeden Moment im Voraus." },
+      "respect": { "title": "Respekt vor der Natur", "text": "Verantwortungsvolle Reisen, die die Wüste schützen und lokale Menschen unterstützen." }
+    },
+    "cta": "Schreib uns für deine Reise"
+  },
+  "Gallery": {
+    "badge": "Foto- und Videogalerie",
+    "title": "Momente aus dem Herzen der Wüste",
+    "subtitle": "Bilder von Camps, Quellen und Felsformationen. Ersetze diese Platzhalter durch deine eigenen Reisefotos.",
+    "all": "Alle",
+    "camping": "Camping",
+    "desert": "Wüste",
+    "oasis": "Oase",
+    "video": "Video",
+    "videoTitle": "Ein Film unserer Reise",
+    "videoNote": "Füge hier deine Videodatei oder deinen Link ein, damit es in diesem Rahmen erscheint.",
+    "clickToZoom": "Zum Vergrößern klicken",
+    "close": "Schließen",
+    "items": {
+      "campfire": "Abend am Lagerfeuer",
+      "tent": "Zelte unter Sternen",
+      "whiteDesert": "Weiße Wüste bei Sonnenuntergang",
+      "jeep": "4x4-Abenteuer zwischen Dünen",
+      "spring": "Warmes Wasser der Heiz-Quelle",
+      "palms": "Palmenhaine in Bawiti",
+      "crystal": "Quarzglanz am Kristallberg",
+      "nightSky": "Klarer Wüstennachthimmel"
+    }
+  },
+  "Contact": {
+    "badge": "Kontakt",
+    "title": "Sprechen wir über deine Reise",
+    "subtitle": "Schick uns deine Reisedetails oder frage ein individuelles Programm an – wir antworten so schnell wie möglich.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon / WhatsApp",
+    "message": "Nachricht",
+    "namePlaceholder": "Dein vollständiger Name",
+    "emailPlaceholder": "name@example.com",
+    "phonePlaceholder": "+20 ...",
+    "messagePlaceholder": "Anzahl der Tage, Datum und Orte, die du besuchen möchtest",
+    "send": "Anfrage senden",
+    "success": "Deine Nachricht ist bereit! Drücke den WhatsApp-Button, um sie direkt an uns zu senden.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappText": "Der schnellste Weg für Buchung und Fragen.",
+    "whatsappButton": "WhatsApp-Chat starten",
+    "locationTitle": "Unser Standort",
+    "locationText": "Bahariya-Oase, Gouvernement Gizeh, Ägypten",
+    "hoursTitle": "Antwortzeiten",
+    "hoursText": "Täglich von 8 bis 22 Uhr",
+    "socialTitle": "Folge uns",
+    "note": "Deine Daten werden nicht gespeichert; die Nachricht öffnet direkt WhatsApp.",
+    "required": "Bitte fülle die Pflichtfelder aus",
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein"
+  },
+  "Footer": {
+    "tagline": "Wüstenreisen, die bleibende Erinnerungen schaffen. Von Bawiti bis zur Weißen Wüste bringen wir dich ins Herz der Bahariya-Oase.",
+    "quickLinks": "Schnelllinks",
+    "contactTitle": "Kontakt",
+    "socialTitle": "Folge uns",
+    "newsletterTitle": "Newsletter abonnieren",
+    "newsletterText": "Neue Reiseideen und Wüstengeschichten, einmal im Monat.",
+    "emailPlaceholder": "Deine E-Mail",
+    "subscribe": "Abonnieren",
+    "subscribed": "Danke für dein Abonnement!",
+    "developedBy": "Entwickelt von",
+    "portfolio": "Portfolio",
+    "rights": "Alle Rechte vorbehalten",
+    "backToTop": "Nach oben"
+  }
+}

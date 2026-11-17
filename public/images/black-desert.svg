@@ -1,0 +1,19 @@
+<!-- صورة تجريبية للصحراء السوداء: تلال بركانية داكنة. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Black Desert">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d4d5c"/><stop offset="1" stop-color="#e6b77e"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#sky)"/>
+  <circle cx="690" cy="200" r="70" fill="#f7d39a" opacity="0.9"/>
+  <path d="M0 500 Q200 390 420 490 T900 470 V700 H0Z" fill="#d7a463"/>
+  <g fill="#3a3733">
+    <path d="M40 540 q80-150 190-20 q50 60 20 130 H20Z"/>
+    <path d="M330 560 q90-190 220-30 q50 65 20 140 H300Z"/>
+    <path d="M680 550 q70-130 170-10 q40 50 20 120 H650Z"/>
+  </g>
+  <g fill="#5d554c" opacity="0.8">
+    <circle cx="210" cy="535" r="9"/><circle cx="520" cy="510" r="7"/><circle cx="810" cy="530" r="8"/>
+  </g>
+</svg>

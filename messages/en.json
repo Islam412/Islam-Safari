@@ -1,0 +1,319 @@
+{
+  "Meta": {
+    "title": "Islam Safari | Bahariya Oasis & White Desert Trips",
+    "description": "Camping trips and 4x4 adventures in Bahariya Oasis, the White Desert, Heiz Spring and Crystal Mountain with local guides."
+  },
+  "Common": {
+    "day": "Day",
+    "days": "days",
+    "night": "night",
+    "nights": "nights",
+    "perPerson": "per person",
+    "from": "From",
+    "viewDetails": "View details",
+    "book": "Book now",
+    "back": "Back",
+    "all": "All",
+    "explore": "Explore more"
+  },
+  "Nav": {
+    "home": "Home",
+    "programs": "Programs",
+    "about": "About us",
+    "gallery": "Gallery",
+    "contact": "Contact us",
+    "bookNow": "Book your trip",
+    "menu": "Menu",
+    "closeMenu": "Close",
+    "language": "Language",
+    "toggleTheme": "Toggle dark mode"
+  },
+  "Hero": {
+    "badge": "An authentic desert adventure in the heart of Egypt",
+    "title": "Bahariya Oasis",
+    "titleAccent": "where the story begins",
+    "subtitle": "Discover the White Desert, warm springs and camping under the stars with Islam Safari. Trips designed with care for every detail of your day.",
+    "primary": "Explore programs",
+    "secondary": "Contact us",
+    "scroll": "Scroll to explore",
+    "chip1": "Air-conditioned 4x4",
+    "chip2": "Expert local guide",
+    "chip3": "Sleep under the stars",
+    "stat1Value": "7",
+    "stat1Label": "languages for our guests",
+    "stat2Value": "4x4",
+    "stat2Label": "adventure in every trip",
+    "stat3Value": "∞",
+    "stat3Label": "stars in the desert sky"
+  },
+  "Home": {
+    "placesBadge": "Top destinations",
+    "placesTitle": "Places worth seeing",
+    "placesSubtitle": "From white limestone formations to warm springs, every corner of Bahariya Oasis tells a different story.",
+    "campBadge": "Camping experience",
+    "campTitle": "Sleep under a crystal-clear desert sky",
+    "campText": "Comfortable tents, a grilled dinner by the fire and a silence where your heart speaks before the stars do. That is the moment you never forget.",
+    "campCta": "View the gallery",
+    "programsBadge": "Our programs",
+    "programsTitle": "Trips made to be lived",
+    "programsSubtitle": "Choose between a short overnight journey, a two-day desert adventure or a full day among the oases.",
+    "viewAll": "All programs",
+    "whyBadge": "Why Islam Safari?",
+    "whyTitle": "Small details make a great trip",
+    "features": {
+      "localGuide": { "title": "Local guides", "text": "We know every track and every rock in the Western Desert and share its stories with you." },
+      "comfort": { "title": "Comfort without compromise", "text": "Air-conditioned cars, equipped tents and fresh meals on every trip." },
+      "safety": { "title": "Safe at every step", "text": "Trained desert teams with water and all the equipment you need." },
+      "memories": { "title": "Moments worth a photo", "text": "Well-timed sunsets and sunrises so you take the best pictures." }
+    },
+    "places": {
+      "whiteDesert": { "title": "White Desert", "description": "White chalk-like sculptures in an open-air museum, especially magical at sunset." },
+      "heizSpring": { "title": "Heiz Spring", "description": "Warm natural springs in the middle of the sand, perfect for relaxing after a long drive." },
+      "crystalMountain": { "title": "Crystal Mountain", "description": "Shimmering quartz rocks that glow in the sun like giant crystals." },
+      "blackDesert": { "title": "Black Desert", "description": "Dark volcanic hills creating a striking contrast with the golden sand." },
+      "agabat": { "title": "El Agabat", "description": "Wind-carved rock corridors, one of the most beautiful photo stops on the route." },
+      "bawiti": { "title": "Bawiti", "description": "The capital of Bahariya Oasis, with local markets, cafés and palm groves to the horizon." }
+    },
+    "ctaTitle": "Ready for your next adventure?",
+    "ctaText": "Tell us your dates and preferences and we will design a program that fits you perfectly.",
+    "ctaButton": "Let's plan your trip"
+  },
+  "Programs": {
+    "badge": "Trip programs",
+    "title": "Choose your next adventure",
+    "subtitle": "Every program brings together the best of Bahariya Oasis and the desert, with plenty of time to relax and take photos.",
+    "duration": "Duration",
+    "highlights": "Program highlights",
+    "itinerary": "Day-by-day itinerary",
+    "included": "What is included",
+    "excluded": "What is not included",
+    "priceNote": "Prices are indicative and vary by group size and season.",
+    "bookNote": "Contact us to confirm your date and all details.",
+    "notFound": "Program not found",
+    "notFoundText": "The link may have changed. Browse all programs and pick the one that suits you.",
+    "back": "Back to programs",
+    "dayLabel": "Day",
+    "items": {
+      "oasis-and-desert-1-night": {
+        "title": "1 Night in the Oasis and the Desert",
+        "subtitle": "Cairo – Bahariya – White Desert",
+        "summary": "A balanced mix of adventure and relaxation: warm springs, surreal white rock formations and a night under the stars.",
+        "durationLabel": "2 days / 1 night",
+        "highlights": [
+          "Swim in the warm Heiz Spring",
+          "Magical sunset in the White Desert",
+          "Grilled dinner by the fire",
+          "Visit Crystal Mountain and the Black Desert"
+        ],
+        "days": [
+          {
+            "title": "Day 1: Cairo – Bahariya – White Desert",
+            "activities": [
+              "Departure from Cairo in an air-conditioned vehicle to the Western Desert.",
+              "Arrival in Bawiti, the main town of Bahariya Oasis.",
+              "Change to 4x4 vehicles to continue our adventure to the White Desert.",
+              "Stop at the small oasis of Heiz for lunch and a relaxing soak in a natural hot spring.",
+              "Continue the journey with a stop in the El Agabat region, famous for its impressive rock formations.",
+              "Arrival in the White Desert, where surreal limestone formations create a magical landscape at sunset.",
+              "Grilled dinner by the fire and an overnight stay in camp under the stars."
+            ]
+          },
+          {
+            "title": "Day 2: White Desert – Bahariya – Cairo",
+            "activities": [
+              "Breakfast at the camp.",
+              "Free time to explore the fascinating rock formations of the White Desert.",
+              "Return to Bahariya with stops at Crystal Mountain, known for its quartz formations, and the Black Desert with its volcanic landscape.",
+              "Free time in Bawiti to explore local markets and shop for traditional souvenirs.",
+              "Return to Cairo."
+            ]
+          }
+        ],
+        "included": [
+          "Transfer from Cairo and back in an air-conditioned vehicle",
+          "4x4 safari with driver and guide",
+          "Camp accommodation, breakfast and dinner",
+          "Mineral water during the trip"
+        ],
+        "excluded": [
+          "Personal activities and tips",
+          "Lunches on both days unless stated",
+          "Travel insurance"
+        ]
+      },
+      "two-nights-oasis-adventure": {
+        "title": "2-Night Desert Adventure in the Oasis",
+        "subtitle": "Local tour + White Desert",
+        "summary": "A deeper journey combining oasis landmarks with desert camping and an unforgettable sunrise.",
+        "durationLabel": "3 days / 2 nights",
+        "highlights": [
+          "Explore the Natural Pyramid and Salt Lake",
+          "Relax in the hot springs of Heiz",
+          "Full night of camping under a starry sky",
+          "Sunrise breakfast in the desert"
+        ],
+        "days": [
+          {
+            "title": "Day 1: Cairo – Bahariya Oasis",
+            "activities": [
+              "Departure from Cairo to the Western Desert.",
+              "Arrive at Bahariya Oasis and check in at the hotel.",
+              "Lunch and departure by 4x4 for a local tour: the Natural Pyramid, the Long Salt Lake, the lush Palm Grove and the historic English Mountain.",
+              "Return to the hotel for dinner and overnight stay."
+            ]
+          },
+          {
+            "title": "Day 2: Bahariya Oasis – White Desert",
+            "activities": [
+              "Breakfast at the hotel before departing for the White Desert.",
+              "Drive through the Black Desert with a stop at Heiz Oasis to relax in natural hot springs.",
+              "Visit Crystal Mountain and the impressive formations of El Agabat.",
+              "Arrival in the White Desert, where the surreal rock formations become magical at sunset.",
+              "Barbecue dinner by the fire under a starry sky.",
+              "Overnight camping in the heart of the desert."
+            ]
+          },
+          {
+            "title": "Day 3: White Desert – Cairo",
+            "activities": [
+              "Sunrise over the desert with an unforgettable breakfast.",
+              "Free time to explore the fascinating natural formations of the White Desert.",
+              "Return to Bahariya Oasis.",
+              "Transfer back to Cairo, marking the end of an unforgettable adventure."
+            ]
+          }
+        ],
+        "included": [
+          "Transfer from Cairo and back",
+          "One night in a Bahariya hotel and one night in a desert camp",
+          "All meals unless otherwise stated",
+          "4x4 tours with a local guide"
+        ],
+        "excluded": [
+          "Personal expenses",
+          "Entrance fees where applicable",
+          "Travel insurance"
+        ]
+      },
+      "oasis-day-escape": {
+        "title": "Full Day in Bahariya Oasis",
+        "subtitle": "A day trip for guests with limited time",
+        "summary": "The best of the oasis in one day: springs, palms, rock formations and a desert sunset before heading back to Cairo.",
+        "durationLabel": "1 day, no overnight stay",
+        "highlights": [
+          "Natural Pyramid and Salt Lake",
+          "Palm groves and English Mountain",
+          "Relaxing at Heiz Spring",
+          "Desert sunset before returning"
+        ],
+        "days": [
+          {
+            "title": "Day 1: Cairo – Bahariya Oasis – Cairo",
+            "activities": [
+              "Leave Cairo early in an air-conditioned vehicle.",
+              "Visit the Natural Pyramid, Salt Lake, palm groves and English Mountain.",
+              "Local lunch in Bawiti.",
+              "Relax in the warm springs of Heiz Oasis.",
+              "Continue to El Agabat and the Black Desert to watch the sunset.",
+              "Return to Cairo in the evening."
+            ]
+          }
+        ],
+        "included": [
+          "Round-trip transfer from Cairo",
+          "4x4 tour with a local guide",
+          "Lunch and mineral water"
+        ],
+        "excluded": [
+          "Accommodation",
+          "Personal expenses",
+          "Travel insurance"
+        ]
+      }
+    }
+  },
+  "About": {
+    "badge": "About us",
+    "title": "We love this desert... and we know it well",
+    "lead": "Islam Safari is a local team specialised in trips to Bahariya Oasis and the Western Desert. We build every journey around the places we love and know in detail.",
+    "paragraph1": "The story started in Bawiti, where we learned that the best moments of a trip are not in the schedule: the warmth of the water at Heiz, the colour of the rocks before sunset and the silence of the night under the stars.",
+    "paragraph2": "That is why our programs combine exploration and comfort, with equipped vehicles and guides who know the terrain and respect the environment and local communities.",
+    "stat1Value": "100%",
+    "stat1Label": "local expertise",
+    "stat2Value": "7",
+    "stat2Label": "languages for guests",
+    "stat3Value": "24/7",
+    "stat3Label": "support before and after",
+    "values": {
+      "passion": { "title": "Desert passion", "text": "We choose every stop because we truly love it, not just because it is on a map." },
+      "detail": { "title": "Attention to detail", "text": "From sunset timing to the warmth of your tent, we plan every moment in advance." },
+      "respect": { "title": "Respect for nature", "text": "Responsible trips that protect the desert and support local people." }
+    },
+    "cta": "Message us to plan your trip"
+  },
+  "Gallery": {
+    "badge": "Photo & video gallery",
+    "title": "Moments from the heart of the desert",
+    "subtitle": "Photos from camps, springs and rock formations. Replace these placeholders with your own trip photos.",
+    "all": "All",
+    "camping": "Camping",
+    "desert": "Desert",
+    "oasis": "Oasis",
+    "video": "Video",
+    "videoTitle": "A film from our trip",
+    "videoNote": "Add your video file or link here to display it in this frame.",
+    "clickToZoom": "Click to enlarge",
+    "close": "Close",
+    "items": {
+      "campfire": "Evening around the campfire",
+      "tent": "Tents under the stars",
+      "whiteDesert": "White Desert at sunset",
+      "jeep": "4x4 adventure among the dunes",
+      "spring": "Warm waters of Heiz Spring",
+      "palms": "Palm groves in Bawiti",
+      "crystal": "Quartz glow at Crystal Mountain",
+      "nightSky": "Clear desert night sky"
+    }
+  },
+  "Contact": {
+    "badge": "Contact us",
+    "title": "Let's talk about your trip",
+    "subtitle": "Send us your trip details or ask for a custom program and we will get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "message": "Message",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "name@example.com",
+    "phonePlaceholder": "+20 ...",
+    "messagePlaceholder": "Number of days, date and places you would like to visit",
+    "send": "Send request",
+    "success": "Your message is ready! Press the WhatsApp button to send it directly to us.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappText": "The fastest way to book and ask questions.",
+    "whatsappButton": "Start a WhatsApp chat",
+    "locationTitle": "Our location",
+    "locationText": "Bahariya Oasis, Giza Governorate, Egypt",
+    "hoursTitle": "Reply hours",
+    "hoursText": "Every day from 8 am to 10 pm",
+    "socialTitle": "Follow us",
+    "note": "Your data is not stored; the message opens directly in WhatsApp.",
+    "required": "Please fill in the required fields",
+    "invalidEmail": "Please enter a valid email address"
+  },
+  "Footer": {
+    "tagline": "Desert trips that create lasting memories. From Bawiti to the White Desert, we take you to the heart of Bahariya Oasis.",
+    "quickLinks": "Quick links",
+    "contactTitle": "Get in touch",
+    "socialTitle": "Follow us",
+    "newsletterTitle": "Join our newsletter",
+    "newsletterText": "New trip ideas and desert stories, once a month.",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribed": "Thanks for subscribing!",
+    "developedBy": "Developed by",
+    "portfolio": "Portfolio",
+    "rights": "All rights reserved",
+    "backToTop": "Back to top"
+  }
+}

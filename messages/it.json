@@ -1,0 +1,319 @@
+{
+  "Meta": {
+    "title": "Islam Safari | Viaggi nell'Oasi di Bahariya e nel Deserto Bianco",
+    "description": "Camping e avventure in 4x4 nell'oasi di Bahariya, nel Deserto Bianco, alla sorgente di Heiz e al Monte di Cristallo con guide locali."
+  },
+  "Common": {
+    "day": "Giorno",
+    "days": "giorni",
+    "night": "notte",
+    "nights": "notti",
+    "perPerson": "a persona",
+    "from": "Da",
+    "viewDetails": "Vedi dettagli",
+    "book": "Prenota ora",
+    "back": "Indietro",
+    "all": "Tutti",
+    "explore": "Scopri di più"
+  },
+  "Nav": {
+    "home": "Home",
+    "programs": "Programmi",
+    "about": "Chi siamo",
+    "gallery": "Galleria",
+    "contact": "Contattaci",
+    "bookNow": "Prenota il viaggio",
+    "menu": "Menu",
+    "closeMenu": "Chiudi",
+    "language": "Lingua",
+    "toggleTheme": "Attiva/disattiva tema scuro"
+  },
+  "Hero": {
+    "badge": "Un'avventura autentica nel deserto nel cuore dell'Egitto",
+    "title": "Oasi di Bahariya",
+    "titleAccent": "dove inizia la storia",
+    "subtitle": "Scopri il Deserto Bianco, le sorgenti calde e il campeggio sotto le stelle con Islam Safari. Viaggi progettati con cura per ogni dettaglio.",
+    "primary": "Scopri i programmi",
+    "secondary": "Contattaci",
+    "scroll": "Scorri per esplorare",
+    "chip1": "4x4 climatizzato",
+    "chip2": "Guida locale esperta",
+    "chip3": "Dormi sotto le stelle",
+    "stat1Value": "7",
+    "stat1Label": "lingue per i nostri ospiti",
+    "stat2Value": "4x4",
+    "stat2Label": "avventura in ogni viaggio",
+    "stat3Value": "∞",
+    "stat3Label": "stelle nel cielo del deserto"
+  },
+  "Home": {
+    "placesBadge": "Le mete più belle",
+    "placesTitle": "Luoghi da vedere",
+    "placesSubtitle": "Dalle formazioni di calce bianca alle sorgenti calde, ogni angolo dell'oasi di Bahariya racconta una storia diversa.",
+    "campBadge": "Esperienza di campeggio",
+    "campTitle": "Dormi sotto un cielo desertico limpidissimo",
+    "campText": "Tende confortevoli, cena alla griglia vicino al fuoco e un silenzio in cui il cuore parla prima delle stelle. È il momento indimenticabile.",
+    "campCta": "Vedi la galleria",
+    "programsBadge": "I nostri programmi",
+    "programsTitle": "Viaggi da vivere",
+    "programsSubtitle": "Scegli tra una breve notte, un'avventura di due giorni nel deserto o una giornata intera tra le oasi.",
+    "viewAll": "Tutti i programmi",
+    "whyBadge": "Perché Islam Safari?",
+    "whyTitle": "Piccoli dettagli, grandi viaggi",
+    "features": {
+      "localGuide": { "title": "Guide locali", "text": "Conosciamo ogni sentiero e ogni roccia del Deserto Occidentale e ne condividiamo le storie." },
+      "comfort": { "title": "Comfort senza compromessi", "text": "Auto climatizzate, tende attrezzate e pasti freschi in ogni viaggio." },
+      "safety": { "title": "Sicurezza in ogni passo", "text": "Squadre addestrate, acqua e tutta l'attrezzatura necessaria." },
+      "memories": { "title": "Momenti da fotografare", "text": "Tramonti e albe scelti al momento giusto per le foto più belle." }
+    },
+    "places": {
+      "whiteDesert": { "title": "Deserto Bianco", "description": "Sculture di gesso bianco come un museo all'aperto, soprattutto magiche al tramonto." },
+      "heizSpring": { "title": "Sorgente di Heiz", "description": "Sorgenti naturali calde in mezzo alla sabbia, perfette per rilassarsi dopo un lungo viaggio." },
+      "crystalMountain": { "title": "Monte di Cristallo", "description": "Rocce di quarzo luccicanti che sembrano cristalli giganti sotto il sole." },
+      "blackDesert": { "title": "Deserto Nero", "description": "Colline vulcaniche scure che creano un contrasto suggestivo con la sabbia dorata." },
+      "agabat": { "title": "El Agabat", "description": "Corridoi di roccia scolpiti dal vento, una delle tappe fotografiche più belle del percorso." },
+      "bawiti": { "title": "Bawiti", "description": "Capitale dell'oasi di Bahariya, con mercati, caffè e palmeti fino all'orizzonte." }
+    },
+    "ctaTitle": "Pronto per la prossima avventura?",
+    "ctaText": "Dicci le tue date e i tuoi gusti e prepareremo un programma su misura per te.",
+    "ctaButton": "Parliamo del tuo viaggio"
+  },
+  "Programs": {
+    "badge": "Programmi di viaggio",
+    "title": "Scegli la tua prossima avventura",
+    "subtitle": "Ogni programma unisce il meglio dell'oasi di Bahariya e del deserto, con tanto tempo per rilassarsi e scattare foto.",
+    "duration": "Durata",
+    "highlights": "Punti salienti",
+    "itinerary": "Itinerario giorno per giorno",
+    "included": "Cosa è incluso",
+    "excluded": "Cosa non è incluso",
+    "priceNote": "I prezzi sono indicativi e variano secondo il gruppo e la stagione.",
+    "bookNote": "Contattaci per confermare data e dettagli.",
+    "notFound": "Programma non trovato",
+    "notFoundText": "Il link potrebbe essere cambiato. Esplora tutti i programmi e scegli quello giusto per te.",
+    "back": "Torna ai programmi",
+    "dayLabel": "Giorno",
+    "items": {
+      "oasis-and-desert-1-night": {
+        "title": "1 notte tra oasi e deserto",
+        "subtitle": "Il Cairo – Bahariya – Deserto Bianco",
+        "summary": "Un equilibrio perfetto tra avventura e relax: sorgenti calde, rocce bianche suggestive e una notte sotto le stelle.",
+        "durationLabel": "2 giorni / 1 notte",
+        "highlights": [
+          "Bagno nella sorgente calda di Heiz",
+          "Tramonto magico nel Deserto Bianco",
+          "Cena alla griglia vicino al fuoco",
+          "Visita al Monte di Cristallo e al Deserto Nero"
+        ],
+        "days": [
+          {
+            "title": "Giorno 1: Il Cairo – Bahariya – Deserto Bianco",
+            "activities": [
+              "Partenza dal Cairo in veicolo climatizzato verso il Deserto Occidentale.",
+              "Arrivo a Bawiti, la città principale dell'oasi di Bahariya.",
+              "Passaggio ai veicoli 4x4 per proseguire verso il Deserto Bianco.",
+              "Sosta alla piccola oasi di Heiz per il pranzo e un bagno rilassante in una sorgente naturale calda.",
+              "Proseguimento con sosta nella zona di El Agabat, famosa per le impressionanti formazioni rocciose.",
+              "Arrivo nel Deserto Bianco, dove le formazioni calcaree creano un paesaggio magico al tramonto.",
+              "Cena grigliata vicino al fuoco e pernottamento in tenda sotto le stelle."
+            ]
+          },
+          {
+            "title": "Giorno 2: Deserto Bianco – Bahariya – Il Cairo",
+            "activities": [
+              "Colazione in tenda.",
+              "Tempo libero per esplorare le affascinanti formazioni rocciose del Deserto Bianco.",
+              "Ritorno a Bahariya con soste al Monte di Cristallo, noto per i cristalli di quarzo, e al Deserto Nero dal paesaggio vulcanico.",
+              "Tempo libero a Bawiti per i mercati locali e i souvenir tradizionali.",
+              "Ritorno al Cairo."
+            ]
+          }
+        ],
+        "included": [
+          "Trasferimento dal Cairo e ritorno in veicolo climatizzato",
+          "Safari in 4x4 con autista e guida",
+          "Pernottamento in tenda, colazione e cena",
+          "Acqua minerale durante il viaggio"
+        ],
+        "excluded": [
+          "Attività personali e mance",
+          "Pranzi in entrambi i giorni salvo diversa indicazione",
+          "Assicurazione di viaggio"
+        ]
+      },
+      "two-nights-oasis-adventure": {
+        "title": "Avventura nel deserto: 2 notti nell'oasi",
+        "subtitle": "Tour locale + Deserto Bianco",
+        "summary": "Un viaggio più profondo tra monumenti dell'oasi, campeggio nel deserto e un'alba indimenticabile.",
+        "durationLabel": "3 giorni / 2 notti",
+        "highlights": [
+          "Piramide naturale e lago salato",
+          "Relax nelle sorgenti calde di Heiz",
+          "Una notte intera sotto il cielo stellato",
+          "Colazione all'alba nel deserto"
+        ],
+        "days": [
+          {
+            "title": "Giorno 1: Il Cairo – Oasi di Bahariya",
+            "activities": [
+              "Partenza dal Cairo verso il Deserto Occidentale.",
+              "Arrivo all'oasi di Bahariya e check-in in hotel.",
+              "Pranzo e partenza in 4x4 per il tour locale: Piramide Naturale, Lago Salato Lungo, palmeto e storico Monte Inglese.",
+              "Ritorno in hotel per cena e pernottamento."
+            ]
+          },
+          {
+            "title": "Giorno 2: Oasi di Bahariya – Deserto Bianco",
+            "activities": [
+              "Colazione in hotel prima di partire per il Deserto Bianco.",
+              "Attraversamento del Deserto Nero con sosta all'oasi di Heiz per rilassarsi nelle sorgenti naturali.",
+              "Visita al Monte di Cristallo e alle formazioni di El Agabat.",
+              "Arrivo nel Deserto Bianco, dove le rocce diventano magiche al tramonto.",
+              "Cena barbecue vicino al fuoco sotto un cielo stellato.",
+              "Pernottamento in campeggio nel cuore del deserto."
+            ]
+          },
+          {
+            "title": "Giorno 3: Deserto Bianco – Il Cairo",
+            "activities": [
+              "Alba sul deserto con una colazione indimenticabile.",
+              "Tempo libero per esplorare le formazioni naturali del Deserto Bianco.",
+              "Ritorno all'oasi di Bahariya.",
+              "Trasferimento al Cairo: fine di un'avventura indimenticabile."
+            ]
+          }
+        ],
+        "included": [
+          "Trasferimento dal Cairo e ritorno",
+          "Una notte in hotel a Bahariya e una notte in campeggio",
+          "Tutti i pasti salvo diversa indicazione",
+          "Tour in 4x4 con guida locale"
+        ],
+        "excluded": [
+          "Spese personali",
+          "Diritti d'ingresso dove previsti",
+          "Assicurazione di viaggio"
+        ]
+      },
+      "oasis-day-escape": {
+        "title": "Giornata completa all'oasi di Bahariya",
+        "subtitle": "Escursione giornaliera per chi ha poco tempo",
+        "summary": "Il meglio dell'oasi in un giorno: sorgenti, palme, formazioni rocciose e tramonto prima di tornare al Cairo.",
+        "durationLabel": "1 giorno, senza pernottamento",
+        "highlights": [
+          "Piramide naturale e lago salato",
+          "Palmeti e Monte Inglese",
+          "Relax alla sorgente di Heiz",
+          "Tramonto prima del ritorno"
+        ],
+        "days": [
+          {
+            "title": "Giorno 1: Il Cairo – Oasi di Bahariya – Il Cairo",
+            "activities": [
+              "Partenza presto dal Cairo in veicolo climatizzato.",
+              "Visita alla Piramide Naturale, al Lago Salato, ai palmeti e al Monte Inglese.",
+              "Pranzo locale a Bawiti.",
+              "Relax nelle sorgenti calde di Heiz.",
+              "Proseguimento verso El Agabat e il Deserto Nero per il tramonto.",
+              "Ritorno al Cairo in serata."
+            ]
+          }
+        ],
+        "included": [
+          "Trasferimento andata e ritorno dal Cairo",
+          "Tour in 4x4 con guida locale",
+          "Pranzo e acqua minerale"
+        ],
+        "excluded": [
+          "Pernottamento",
+          "Spese personali",
+          "Assicurazione di viaggio"
+        ]
+      }
+    }
+  },
+  "About": {
+    "badge": "Chi siamo",
+    "title": "Amiamo questo deserto... e lo conosciamo bene",
+    "lead": "Islam Safari è un team locale specializzato in viaggi all'oasi di Bahariya e nel Deserto Occidentale. Costruiamo ogni viaggio attorno ai luoghi che amiamo e conosciamo nei dettagli.",
+    "paragraph1": "La storia è iniziata a Bawiti, dove abbiamo imparato che i momenti più belli non sono nel programma: il calore dell'acqua a Heiz, il colore delle rocce prima del tramonto e il silenzio della notte sotto le stelle.",
+    "paragraph2": "Per questo i nostri programmi uniscono scoperta e comfort, con veicoli attrezzati e guide che conoscono il territorio e rispettano l'ambiente e le comunità locali.",
+    "stat1Value": "100%",
+    "stat1Label": "esperienza locale",
+    "stat2Value": "7",
+    "stat2Label": "lingue per gli ospiti",
+    "stat3Value": "24/7",
+    "stat3Label": "supporto prima e dopo",
+    "values": {
+      "passion": { "title": "Passione per il deserto", "text": "Scegliamo ogni tappa perché la amiamo davvero, non solo perché è sulla mappa." },
+      "detail": { "title": "Attenzione ai dettagli", "text": "Dall'ora del tramonto al calore della tua tenda, pianifichiamo ogni momento." },
+      "respect": { "title": "Rispetto della natura", "text": "Viaggi responsabili che proteggono il deserto e sostengono la popolazione locale." }
+    },
+    "cta": "Scrivici per organizzare il viaggio"
+  },
+  "Gallery": {
+    "badge": "Galleria foto e video",
+    "title": "Momenti dal cuore del deserto",
+    "subtitle": "Foto di campeggi, sorgenti e formazioni rocciose. Sostituisci questi segnaposto con le tue foto di viaggio.",
+    "all": "Tutti",
+    "camping": "Campeggio",
+    "desert": "Deserto",
+    "oasis": "Oasi",
+    "video": "Video",
+    "videoTitle": "Un film del nostro viaggio",
+    "videoNote": "Aggiungi qui il tuo file video o link per mostrarlo in questo riquadro.",
+    "clickToZoom": "Clicca per ingrandire",
+    "close": "Chiudi",
+    "items": {
+      "campfire": "Sera attorno al fuoco",
+      "tent": "Tende sotto le stelle",
+      "whiteDesert": "Deserto Bianco al tramonto",
+      "jeep": "Avventura 4x4 tra le dune",
+      "spring": "Acque calde della sorgente di Heiz",
+      "palms": "Palmeti a Bawiti",
+      "crystal": "Bagliore di quarzo al Monte di Cristallo",
+      "nightSky": "Cielo notturno limpido"
+    }
+  },
+  "Contact": {
+    "badge": "Contattaci",
+    "title": "Parliamo del tuo viaggio",
+    "subtitle": "Inviaci i dettagli o richiedi un programma personalizzato e ti risponderemo al più presto.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefono / WhatsApp",
+    "message": "Messaggio",
+    "namePlaceholder": "Nome e cognome",
+    "emailPlaceholder": "name@example.com",
+    "phonePlaceholder": "+20 ...",
+    "messagePlaceholder": "Numero di giorni, data e luoghi che vuoi visitare",
+    "send": "Invia richiesta",
+    "success": "Il messaggio è pronto! Premi il pulsante WhatsApp per inviarcelo direttamente.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappText": "Il modo più veloce per prenotare e fare domande.",
+    "whatsappButton": "Avvia chat WhatsApp",
+    "locationTitle": "Dove siamo",
+    "locationText": "Oasi di Bahariya, Governatorato di Giza, Egitto",
+    "hoursTitle": "Orari di risposta",
+    "hoursText": "Tutti i giorni dalle 8 alle 22",
+    "socialTitle": "Seguici",
+    "note": "I tuoi dati non vengono salvati: il messaggio si apre direttamente in WhatsApp.",
+    "required": "Compila i campi obbligatori",
+    "invalidEmail": "Inserisci un indirizzo email valido"
+  },
+  "Footer": {
+    "tagline": "Viaggi nel deserto che creano ricordi duraturi. Da Bawiti al Deserto Bianco, ti portiamo nel cuore dell'oasi di Bahariya.",
+    "quickLinks": "Link rapidi",
+    "contactTitle": "Contatti",
+    "socialTitle": "Seguici",
+    "newsletterTitle": "Iscriviti alla newsletter",
+    "newsletterText": "Nuove idee di viaggio e storie dal deserto, una volta al mese.",
+    "emailPlaceholder": "La tua email",
+    "subscribe": "Iscriviti",
+    "subscribed": "Grazie per l'iscrizione!",
+    "developedBy": "Sviluppato da",
+    "portfolio": "Portfolio",
+    "rights": "Tutti i diritti riservati",
+    "backToTop": "Torna su"
+  }
+}

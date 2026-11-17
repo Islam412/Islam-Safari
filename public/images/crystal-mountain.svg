@@ -1,0 +1,23 @@
+<!-- صورة تجريبية لجبل الكريستال: صخور كوارتز لامعة. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Crystal Mountain">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243b55"/><stop offset="1" stop-color="#e8b978"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3d0"/><stop offset="0.5" stop-color="#d9c9a3"/><stop offset="1" stop-color="#9c825f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#sky)"/>
+  <circle cx="730" cy="160" r="60" fill="#ffe4a3"/>
+  <path d="M0 470 Q220 410 430 470 T900 450 V700 H0Z" fill="#c79455"/>
+  <g fill="url(#hill)">
+    <path d="M120 500 L280 250 L430 500Z"/>
+    <path d="M380 520 L560 210 L740 520Z"/>
+    <path d="M650 510 L790 310 L900 510Z"/>
+  </g>
+  <g fill="#fff8dc" opacity="0.85">
+    <path d="M280 250 l25 45-25-10-22 12Z"/><path d="M560 210 l30 55-30-12-28 14Z"/>
+    <circle cx="430" cy="380" r="4"/><circle cx="670" cy="390" r="3"/><circle cx="220" cy="420" r="3"/>
+  </g>
+</svg>

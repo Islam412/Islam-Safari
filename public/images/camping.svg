@@ -1,0 +1,21 @@
+<!-- صورة تجريبية للتخيم تحت النجوم. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Camping under stars">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050b18"/><stop offset="0.7" stop-color="#16283c"/><stop offset="1" stop-color="#5a4a3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#night)"/>
+  <g fill="#fff6d5">
+    <circle cx="80" cy="80" r="2"/><circle cx="180" cy="150" r="1.5"/><circle cx="300" cy="70" r="2"/>
+    <circle cx="420" cy="170" r="1.5"/><circle cx="560" cy="90" r="2"/><circle cx="690" cy="160" r="1.5"/>
+    <circle cx="810" cy="70" r="2"/><circle cx="860" cy="220" r="1.5"/><circle cx="240" cy="260" r="1.5"/>
+  </g>
+  <circle cx="720" cy="120" r="42" fill="#fff1c4"/>
+  <circle cx="720" cy="120" r="70" fill="#fff1c4" opacity="0.08"/>
+  <path d="M0 520 Q230 470 460 520 T900 500 V700 H0Z" fill="#2b2a29"/>
+  <path d="M230 590 L370 420 L510 590Z" fill="#c8a06a"/>
+  <path d="M370 420 L510 590 L410 590Z" fill="#8a6844"/>
+  <path d="M370 420 L370 590" stroke="#e3c391" stroke-width="4"/>
+  <path d="M600 590 L690 480 L780 590Z" fill="#a98259"/>
+</svg>

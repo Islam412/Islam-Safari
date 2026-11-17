@@ -1,20 +1,13 @@
-import type { NextConfig } from "next";
+// إعدادات Next.js العامة للمشروع.
+import type { NextConfig } from 'next';
+// إضافة دعم next-intl للترجمة وتوجيه اللغات.
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
-};
+// نربط الإصدار المخصص لتحميل الترجمات بمساره داخل src.
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
-export default nextConfig;
+// لا توجد إعدادات إضافية حالياً؛ نمرر كائن فارغ.
+const nextConfig: NextConfig = {};
+
+// تصدير الإعداد بعد تغليفه بـ next-intl.
+export default withNextIntl(nextConfig);

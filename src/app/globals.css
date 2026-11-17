@@ -1,0 +1,148 @@
+/* ملف التنسيقات العامة: تيميل Tailwind v4 + الثيم الفاتح/الغامق + الحركات. */
+@import 'tailwindcss';
+
+/* في Tailwind v4 نخبر إطار العمل أن الوضع الغامق يعتمد على صنف .dark الذي يضعه next-themes. */
+@custom-variant dark (&:is(.dark *));
+
+/* ألوان وهوية الموقع: الرملي والذهبي للصحراء، والأزرق الليلي للوضع الغامق. */
+@theme {
+  --color-sand-50: #fdf9ef;
+  --color-sand-100: #f8efd9;
+  --color-sand-200: #f0dcb2;
+  --color-sand-300: #e5c283;
+  --color-sand-400: #d9a04f;
+  --color-sand-500: #c9822b;
+  --color-sand-600: #a86420;
+  --color-sand-700: #824c1d;
+  --color-sand-800: #5d3719;
+  --color-sand-900: #3d2614;
+
+  --color-gold-300: #ffd88a;
+  --color-gold-400: #ffc55c;
+  --color-gold-500: #f5a623;
+  --color-gold-600: #d48713;
+
+  --color-night-950: #05090f;
+  --color-night-900: #0a111b;
+  --color-night-800: #111c29;
+  --color-night-700: #1b2a3c;
+  --color-night-600: #2a3d52;
+
+  /* حركات جاهزة يمكن استخدامها كأصناف: animate-float و animate-shimmer و animate-pulse-slow. */
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.45; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.08); }
+  }
+}
+
+/* إعدادات الجسم الأساسية. */
+:root {
+  /* لون الخلفية الافتراضي في الوضع الفاتح. */
+  --page-bg: #fdf9ef;
+  /* لون النص الأساسي في الوضع الفاتح. */
+  --page-fg: #2a1c0d;
+  /* خطوط النظام مع دعم العربية بشكل جيد حتى بدون تحميل خط خارجي. */
+  --page-font: 'Cairo', 'Tajawal', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* عندما يضيف next-themes الصنف dark على html تتغير ألوان الصفحة. */
+.dark {
+  --page-bg: #05090f;
+  --page-fg: #f7ead2;
+}
+
+/* تطبيق الألوان والخط على الصفحة كلها. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--page-fg);
+  font-family: var(--page-font);
+  overflow-x: hidden;
+}
+
+/* لون تحديد النص. */
+::selection {
+  background: #f5a623;
+  color: #0a111b;
+}
+
+/* شريط تمرير أنيق يتغير مع الثيم. */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9a04f;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #f5a623;
+  background-clip: content-box;
+}
+
+/* زجاجي للهيدر والبطاقات الزجاجية. */
+.glass {
+  background: rgb(255 255 255 / 0.7);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.dark .glass {
+  background: rgb(10 17 27 / 0.72);
+}
+
+/* تدرج ذهبي للعناوين المميزة. */
+.text-gradient {
+  background: linear-gradient(110deg, #d48713 0%, #f5a623 45%, #ffd88a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* حدود متوهجة للبطاقات عند الـ hover. */
+.glow-border {
+  box-shadow: 0 0 0 1px rgb(245 166 35 / 0.25), 0 18px 50px -20px rgb(245 166 35 / 0.45);
+}
+
+/* طبقة إضاءة خلفية تتحرك ببطء في خلفية الموقع. */
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+/* نقط نجمية صغيرة للوضع الغامق. */
+.star-field {
+  background-image: radial-gradient(circle, rgb(255 216 138 / 0.9) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+/* تقليل الحركة لمن يفضل ذلك من إعدادات النظام. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

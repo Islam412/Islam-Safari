@@ -1,0 +1,319 @@
+{
+  "Meta": {
+    "title": "Islam Safari | Bahariye Vahası ve Beyaz Çöl Turları",
+    "description": "Yerel rehberlerle Bahariye Vahası, Beyaz Çöl, Heiz Kaynağı ve Kristal Dağı'nda kamp ve 4x4 maceraları."
+  },
+  "Common": {
+    "day": "Gün",
+    "days": "gün",
+    "night": "gece",
+    "nights": "gece",
+    "perPerson": "kişi başı",
+    "from": "Başlangıç",
+    "viewDetails": "Detayları gör",
+    "book": "Hemen rezerve et",
+    "back": "Geri",
+    "all": "Tümü",
+    "explore": "Daha fazlasını keşfet"
+  },
+  "Nav": {
+    "home": "Ana sayfa",
+    "programs": "Programlar",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "contact": "İletişim",
+    "bookNow": "Turunu rezerve et",
+    "menu": "Menü",
+    "closeMenu": "Kapat",
+    "language": "Dil",
+    "toggleTheme": "Koyu modu aç/kapat"
+  },
+  "Hero": {
+    "badge": "Mısır'ın kalbinde otantik bir çöl macerası",
+    "title": "Bahariye Vahası",
+    "titleAccent": "hikâye burada başlar",
+    "subtitle": "Islam Safari ile Beyaz Çöl'ü, sıcak kaynakları ve yıldızların altında kamp yapmayı keşfet. Her detayı özenle planlanmış turlar.",
+    "primary": "Programları keşfet",
+    "secondary": "Bize ulaş",
+    "scroll": "Keşfetmek için kaydır",
+    "chip1": "Klimalı 4x4",
+    "chip2": "Uzman yerel rehber",
+    "chip3": "Yıldızların altında uyu",
+    "stat1Value": "7",
+    "stat1Label": "misafirlerimiz için dil",
+    "stat2Value": "4x4",
+    "stat2Label": "her turda macera",
+    "stat3Value": "∞",
+    "stat3Label": "çöl gökyüzündeki yıldız"
+  },
+  "Home": {
+    "placesBadge": "En güzel rotalar",
+    "placesTitle": "Görülmeye değer yerler",
+    "placesSubtitle": "Beyaz kireçtaşı oluşumlarından sıcak kaynaklara kadar Bahariye Vahası'nın her köşesi farklı bir hikâye anlatır.",
+    "campBadge": "Kamp deneyimi",
+    "campTitle": "Berrak bir çöl gökyüzünün altında uyu",
+    "campText": "Rahat çadırlar, ateş başında ızgara yemek ve kalbinin yıldızlardan önce konuştuğu bir sessizlik. Unutulmaz an tam olarak burada.",
+    "campCta": "Galeriyi gör",
+    "programsBadge": "Programlarımız",
+    "programsTitle": "Yaşanmak için tasarlanan turlar",
+    "programsSubtitle": "Kısa bir gecelik yolculuk, iki günlük çöl macerası veya vahalar arasında tam bir gün seç.",
+    "viewAll": "Tüm programlar",
+    "whyBadge": "Neden Islam Safari?",
+    "whyTitle": "Küçük detaylar büyük yolculuklar yaratır",
+    "features": {
+      "localGuide": { "title": "Yerel rehberler", "text": "Batı Çölü'ndeki her patikayı ve her kayayı biliyor, hikâyelerini seninle paylaşıyoruz." },
+      "comfort": { "title": "Ödünsüz konfor", "text": "Klimalı araçlar, donanımlı çadırlar ve her turda taze yemekler." },
+      "safety": { "title": "Her adımda güvenlik", "text": "Eğitimli çöl ekipleri, su ve ihtiyacın olan tüm ekipman." },
+      "memories": { "title": "Fotoğraflık anlar", "text": "En güzel fotoğraflar için doğru zamanda gün batımı ve gün doğumu." }
+    },
+    "places": {
+      "whiteDesert": { "title": "Beyaz Çöl", "description": "Açık hava müzesi gibi beyaz tebeşir heykelleri, özellikle gün batımında büyüleyici." },
+      "heizSpring": { "title": "Heiz Kaynağı", "description": "Kumların ortasındaki sıcak doğal kaynaklar, uzun bir yolculuktan sonra dinlenmek için ideal." },
+      "crystalMountain": { "title": "Kristal Dağı", "description": "Güneş altında dev kristalleri andıran parlayan kuvars kayaları." },
+      "blackDesert": { "title": "Siyah Çöl", "description": "Altın kumla büyüleyici bir tezat oluşturan koyu volkanik tepeler." },
+      "agabat": { "title": "El Agabat", "description": "Rüzgârın oyduğu kayıt tünelleri, rotanın en güzel fotoğraf duraklarından biri." },
+      "bawiti": { "title": "Bawiti", "description": "Bahariye Vahası'nın başkenti; pazarlar, kafeler ve ufka uzanan palmiye bahçeleri." }
+    },
+    "ctaTitle": "Yeni macerana hazır mısın?",
+    "ctaText": "Tarihlerini ve tercihlerini söyle, sana özel bir program hazırlayalım.",
+    "ctaButton": "Yolculuğumuzu konuşalım"
+  },
+  "Programs": {
+    "badge": "Seyahat programları",
+    "title": "Bir sonraki maceranı seç",
+    "subtitle": "Her program Bahariye Vahası ve çölün en iyisini bir araya getirir; dinlenmek ve fotoğraf çekmek için bolca zaman vardır.",
+    "duration": "Süre",
+    "highlights": "Programın öne çıkanları",
+    "itinerary": "Günlük plan",
+    "included": "Dahil olanlar",
+    "excluded": "Dahil olmayanlar",
+    "priceNote": "Fiyatlar yaklaşiktir; grup büyüklüğüne ve sezona göre değişir.",
+    "bookNote": "Tarihi ve tüm detayları onaylamak için bizimle iletişime geç.",
+    "notFound": "Program bulunamadı",
+    "notFoundText": "Bağlantı değişmiş olabilir. Tüm programlara göz atıp sana uygun olanı seç.",
+    "back": "Programlara dön",
+    "dayLabel": "Gün",
+    "items": {
+      "oasis-and-desert-1-night": {
+        "title": "Vaha ve çölde 1 gece",
+        "subtitle": "Kahire – Bahariye – Beyaz Çöl",
+        "summary": "Macera ve dinlenmenin dengeli karışımı: sıcak kaynaklar, büyüleyici beyaz kayalar ve yıldızların altında bir gece.",
+        "durationLabel": "2 gün / 1 gece",
+        "highlights": [
+          "Heiz'in sıcak kaynağında yüzmek",
+          "Beyaz Çöl'de büyüleyici gün batımı",
+          "Ateş başında ızgara akşam yemeği",
+          "Kristal Dağı ve Siyah Çöl ziyareti"
+        ],
+        "days": [
+          {
+            "title": "Gün 1: Kahire – Bahariye – Beyaz Çöl",
+            "activities": [
+              "Klimalı araçla Batı Çölü'ne doğru Kahire'den ayrılış.",
+              "Bahariye Vahası'nın ana kasabası Bawiti'ye varış.",
+              "Beyaz Çöl'e doğru maceraya 4x4 araçlarla devam.",
+              "Heiz vahasında öğle yemeği ve doğal sıcak kaynakta dinlenme molası.",
+              "İzleyici kaya oluşumlarıyla ünlü El Agabat bölgesinde mola.",
+              "Beyaz Çöl'e varış; kireçtaşı oluşumları gün batımında büyüleyici bir manzara yaratır.",
+              "Ateş başında ızgara yemek ve yıldızların altında kampta geceleme."
+            ]
+          },
+          {
+            "title": "Gün 2: Beyaz Çöl – Bahariye – Kahire",
+            "activities": [
+              "Kampta kahvaltı.",
+              "Beyaz Çöl'ün ilgi çekici kaya oluşumlarını keşfetmek için serbest zaman.",
+              "Kuvars kristalleriyle bilinen Kristal Dağı ve volkanik Siyah Çöl molalarıyla Bahariye'ye dönüş.",
+              "Yerel pazarlarda gezmek ve geleneksel hediyelikler almak için Bawiti'de serbest zaman.",
+              "Kahire'ye dönüş."
+            ]
+          }
+        ],
+        "included": [
+          "Kahire'den gidiş-dönüş klimalı araç transferi",
+          "Sürücü ve rehberli 4x4 safari",
+          "Kamp konaklaması, kahvaltı ve akşam yemeği",
+          "Yolculuk boyunca maden suyu"
+        ],
+        "excluded": [
+          "Kişisel aktiviteler ve bahşişler",
+          "Belirtilmedikçe iki günün öğle yemekleri",
+          "Seyahat sigortası"
+        ]
+      },
+      "two-nights-oasis-adventure": {
+        "title": "Vahada 2 gecelik çöl macerası",
+        "subtitle": "Yerel tur + Beyaz Çöl",
+        "summary": "Vaha duraklarını, çöl kampını ve unutulmaz bir gün doğumunu birleştiren daha derin bir yolculuk.",
+        "durationLabel": "3 gün / 2 gece",
+        "highlights": [
+          "Doğal Piramit ve Tuz Gölü",
+          "Heiz'in sıcak kaynaklarında dinlenme",
+          "Yıldızlı gökyüzü altında tam bir gece",
+          "Çölde gün doğumunda kahvaltı"
+        ],
+        "days": [
+          {
+            "title": "Gün 1: Kahire – Bahariye Vahası",
+            "activities": [
+              "Batı Çölü'ne doğru Kahire'den ayrılış.",
+              "Bahariye Vahası'na varış ve otelde check-in.",
+              "Öğle yemeği ve 4x4 ile yerel tur: Doğal Piramit, Uzun Tuz Gölü, palmiye bahçesi ve tarihi İngiliz Dağı.",
+              "Akşam yemeği ve geceleme için otele dönüş."
+            ]
+          },
+          {
+            "title": "Gün 2: Bahariye Vahası – Beyaz Çöl",
+            "activities": [
+              "Otelde kahvaltı, ardından Beyaz Çöl'e hareket.",
+              "Siyah Çöl'den geçiş ve doğal kaynaklarda dinlenmek için Heiz Vahası'nda mola.",
+              "Kristal Dağı ve etkileyici El Agabat oluşumları ziyareti.",
+              "Beyaz Çöl'e varış; kayalar gün batımında büyüleyici bir görünüme kavuşur.",
+              "Yıldızlı gökyüzü altında ateş başında barbekü.",
+              "Çölün ortasında kampta geceleme."
+            ]
+          },
+          {
+            "title": "Gün 3: Beyaz Çöl – Kahire",
+            "activities": [
+              "Çöl üzerinde gün doğumu ve unutulmaz kahvaltı.",
+              "Beyaz Çöl'ün doğal oluşumlarını keşfetmek için serbest zaman.",
+              "Bahariye Vahası'na dönüş.",
+              "Kahire'ye transfer; unutulmaz maceranın sonu."
+            ]
+          }
+        ],
+        "included": [
+          "Kahire'den gidiş-dönüş transfer",
+          "Bahariye'de bir gece otel ve bir gece çöl kampı",
+          "Belirtilmedikçe tüm yemekler",
+          "Yerel rehberli 4x4 turları"
+        ],
+        "excluded": [
+          "Kişisel harcamalar",
+          "Gerektiğinde giriş ücretleri",
+          "Seyahat sigortası"
+        ]
+      },
+      "oasis-day-escape": {
+        "title": "Bahariye Vahası'nda tam gün",
+        "subtitle": "Vakti sınırlı misafirler için günlük tur",
+        "summary": "Bir günde vahanın en iyisi: kaynaklar, palmiyeler, kaya oluşumları ve Kahire'ye dönmeden önce çöl gün batımı.",
+        "durationLabel": "1 gün, geceleme yok",
+        "highlights": [
+          "Doğal Piramit ve Tuz Gölü",
+          "Palmiye bahçeleri ve İngiliz Dağı",
+          "Heiz Kaynağı'nda dinlenme",
+          "Dönüşten önce gün batımı"
+        ],
+        "days": [
+          {
+            "title": "Gün 1: Kahire – Bahariye Vahası – Kahire",
+            "activities": [
+              "Klimalı araçla Kahire'den erken ayrılış.",
+              "Doğal Piramit, Tuz Gölü, palmiye bahçeleri ve İngiliz Dağı ziyareti.",
+              "Bawiti'de yerel öğle yemeği.",
+              "Heiz'in sıcak kaynaklarında dinlenme.",
+              "Gün batımını izlemek için El Agabat ve Siyah Çöl'e doğru yolculuk.",
+              "Akşam Kahire'ye dönüş."
+            ]
+          }
+        ],
+        "included": [
+          "Kahire'den gidiş-dönüş transfer",
+          "Yerel rehberli 4x4 turu",
+          "Öğle yemeği ve maden suyu"
+        ],
+        "excluded": [
+          "Konaklama",
+          "Kişisel harcamalar",
+          "Seyahat sigortası"
+        ]
+      }
+    }
+  },
+  "About": {
+    "badge": "Hakkımızda",
+    "title": "Bu çölü seviyoruz... ve onu iyi tanıyoruz",
+    "lead": "Islam Safari, Bahariye Vahası ve Batı Çölü turlarında uzmanlaşmış yerel bir ekiptir. Her yolculuğu sevdiğimiz ve ayrıntılarıyla bildiğimiz yerler etrafında kuruyoruz.",
+    "paragraph1": "Hikâye Bawiti'de başladı; bir yolculuğun en güzel anlarının programda yazmadığını öğrendik: Heiz'de suyun sıcaklığı, gün batımından önce kayaların rengi ve yıldızların altındaki gece sessizliği.",
+    "paragraph2": "Bu yüzden programlarımız keşfi ve konforu birleştirir; donanımlı araçlar ve araziyi bilen, çevreye ve yerel halka saygılı rehberlerle çalışırız.",
+    "stat1Value": "100%",
+    "stat1Label": "yerel deneyim",
+    "stat2Value": "7",
+    "stat2Label": "misafir dili",
+    "stat3Value": "24/7",
+    "stat3Label": "yolculuk öncesi ve sonrası destek",
+    "values": {
+      "passion": { "title": "Çöl tutkusu", "text": "Her durağı haritada olduğu için değil, gerçekten sevdiğimiz için seçiyoruz." },
+      "detail": { "title": "Detaylara özen", "text": "Gün batımı zamanından çadırının sıcaklığına kadar her anı önceden planlıyoruz." },
+      "respect": { "title": "Doğaya saygı", "text": "Çölü koruyan ve yerel halkı destekleyen sorumlu turlar." }
+    },
+    "cta": "Yolculuğunu planlamak için yaz bize"
+  },
+  "Gallery": {
+    "badge": "Fotoğraf ve video galerisi",
+    "title": "Çölün kalbinden anlar",
+    "subtitle": "Kamplardan, kaynaklardan ve kaya oluşumlarından fotoğraflar. Bu örnekleri kendi seyahat fotoğraflarınla değiştirebilirsin.",
+    "all": "Tümü",
+    "camping": "Kamp",
+    "desert": "Çöl",
+    "oasis": "Vaha",
+    "video": "Video",
+    "videoTitle": "Yolculuğumuzdan bir film",
+    "videoNote": "Bu alanda göstermek için video dosyanı veya bağlantını buraya ekle.",
+    "clickToZoom": "Büyütmek için tıkla",
+    "close": "Kapat",
+    "items": {
+      "campfire": "Kamp ateşi başında akşam",
+      "tent": "Yıldızların altındaki çadırlar",
+      "whiteDesert": "Gün batımında Beyaz Çöl",
+      "jeep": "Kum tepelerinde 4x4 macerası",
+      "spring": "Heiz Kaynağı'nın sıcak suları",
+      "palms": "Bawiti'de palmiye bahçeleri",
+      "crystal": "Kristal Dağı'nda kuvars ışıltısı",
+      "nightSky": "Berrak çöl gece gökyüzü"
+    }
+  },
+  "Contact": {
+    "badge": "İletişim",
+    "title": "Yolculuğunu konuşalım",
+    "subtitle": "Seyahat detaylarını gönder veya özel bir program iste; en kısa sürede dönüş yapacağız.",
+    "name": "Ad",
+    "email": "E-posta",
+    "phone": "Telefon / WhatsApp",
+    "message": "Mesaj",
+    "namePlaceholder": "Adın soyadın",
+    "emailPlaceholder": "name@example.com",
+    "phonePlaceholder": "+20 ...",
+    "messagePlaceholder": "Gün sayısı, tarih ve görmek istediğin yerler",
+    "send": "Talebi gönder",
+    "success": "Mesajın hazır! Bize doğrudan göndermek için WhatsApp düğmesine bas.",
+    "whatsappTitle": "WhatsApp",
+    "whatsappText": "Rezervasyon ve sorular için en hızlı yol.",
+    "whatsappButton": "WhatsApp sohbetini başlat",
+    "locationTitle": "Konumumuz",
+    "locationText": "Bahariye Vahası, Giza Valiliği, Mısır",
+    "hoursTitle": "Yanıt saatleri",
+    "hoursText": "Her gün 08:00 - 22:00",
+    "socialTitle": "Bizi takip et",
+    "note": "Verilerin saklanmaz; mesaj doğrudan WhatsApp'te açılır.",
+    "required": "Lütfen zorunlu alanları doldur",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi gir"
+  },
+  "Footer": {
+    "tagline": "Kalıcı anılar yaratan çöl yolculukları. Bawiti'den Beyaz Çöl'e, seni Bahariye Vahası'nın kalbine götürüyoruz.",
+    "quickLinks": "Hızlı bağlantılar",
+    "contactTitle": "İletişim",
+    "socialTitle": "Bizi takip et",
+    "newsletterTitle": "Bültene abone ol",
+    "newsletterText": "Yeni seyahat fikirleri ve çöl hikâyeleri, ayda bir kez.",
+    "emailPlaceholder": "E-postan",
+    "subscribe": "Abone ol",
+    "subscribed": "Abone olduğun için teşekkürler!",
+    "developedBy": "Geliştiren",
+    "portfolio": "Portföy",
+    "rights": "Tüm hakları saklıdır",
+    "backToTop": "Yukarı çık"
+  }
+}

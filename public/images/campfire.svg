@@ -1,0 +1,23 @@
+<!-- صورة تجريبية لسهرة نار المخيم. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Campfire night">
+  <defs>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="700" fill="#08111e"/>
+  <g fill="#fff6d5">
+    <circle cx="90" cy="90" r="2"/><circle cx="230" cy="160" r="1.5"/><circle cx="390" cy="80" r="2"/>
+    <circle cx="560" cy="150" r="1.5"/><circle cx="720" cy="90" r="2"/><circle cx="840" cy="180" r="1.5"/>
+  </g>
+  <path d="M0 520 Q230 470 460 520 T900 500 V700 H0Z" fill="#241f1b"/>
+  <ellipse cx="450" cy="560" rx="240" ry="160" fill="url(#glow)"/>
+  <path d="M450 600 q-70-70-20-150 q10 60 40 70 q30-40 20-100 q80 90 20 180Z" fill="#ff8a2b"/>
+  <path d="M450 600 q-35-40-5-90 q5 35 25 45 q20-20 10-60 q45 55 5 105Z" fill="#ffd166"/>
+  <g stroke="#6b4a2c" stroke-width="14" stroke-linecap="round">
+    <path d="M370 610 L530 640"/><path d="M530 610 L370 640"/>
+  </g>
+  <path d="M130 570 L250 450 L370 570Z" fill="#b58a5b"/>
+  <path d="M250 450 L370 570 L290 570Z" fill="#7c5b3a"/>
+</svg>
