@@ -2,6 +2,8 @@
 
 A multilingual tourism website for safari, camping and 4x4 trips in the Bahariya Oasis, White Desert, Heiz Spring, Crystal Mountain and Black Desert. Built with Next.js 16, React 19 and Tailwind CSS v4, with full support for seven languages, light/dark themes, SEO and responsive layouts.
 
+**Live Demo:** [https://islam-safari.vercel.app/en](https://islam-safari.vercel.app/en)
+
 ## Quick Look
 
 [![Desktop overview of all pages](docs/screenshots/overview.webp)](docs/screenshots/overview.webp)
