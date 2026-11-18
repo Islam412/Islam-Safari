@@ -45,6 +45,16 @@ const localeFonts: Record<string, string> = {
   ru: rubik.variable,
   tr: manrope.variable,
 };
+
+const fontVariables: Record<string, string> = {
+  ar: 'var(--font-amiri)',
+  en: 'var(--font-outfit)',
+  de: 'var(--font-manrope)',
+  es: 'var(--font-outfit)',
+  it: 'var(--font-outfit)',
+  ru: 'var(--font-rubik)',
+  tr: 'var(--font-manrope)',
+};
 export async function generateMetadata({
   params,
 }: {
@@ -126,7 +136,9 @@ export default async function LocaleLayout({
       lang={locale}
       dir={dir}
       className={localeFonts[locale] ?? outfit.variable}
-      style={{ '--page-font': `${localeFonts[locale] ?? outfit.variable}, 'Segoe UI', Tahoma, Arial, sans-serif` } as React.CSSProperties}
+      style={{ '--page-font': locale === 'ar'
+        ? "var(--font-amiri), 'Amiri', serif"
+        : `${fontVariables[locale] ?? 'var(--font-outfit)'}, 'Segoe UI', Tahoma, Arial, sans-serif` } as React.CSSProperties}
       suppressHydrationWarning
     >
       <body className="min-h-screen antialiased" suppressHydrationWarning>
