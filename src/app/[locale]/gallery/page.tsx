@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 // مكوّنات المشروع.
 import SectionHeading from '@/components/ui/SectionHeading';
 import GalleryGrid from '@/components/gallery/GalleryGrid';
+import { pageMetadata } from '@/lib/seo';
 
 // بيانات ميتا.
 export async function generateMetadata({
@@ -18,7 +19,7 @@ export async function generateMetadata({
   // الترجمات.
   const t = await getTranslations({ locale, namespace: 'Gallery' });
   // العنوان والوصف.
-  return { title: t('title'), description: t('subtitle') };
+  return pageMetadata({ locale, path: '/gallery', title: t('title'), description: t('subtitle') });
 }
 
 // المكوّن.
@@ -37,7 +38,7 @@ export default async function GalleryPage({
 
   return (
     // محتوى الصفحة.
-    <div className="py-10">
+    <div className="py-8 sm:py-10">
       {/* العنوان */}
       <SectionHeading badge={t('badge')} title={t('title')} subtitle={t('subtitle')} />
       {/* شبكة المعرض التفاعلية */}

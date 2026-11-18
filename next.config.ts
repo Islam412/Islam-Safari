@@ -6,8 +6,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 // نربط الإصدار المخصص لتحميل الترجمات بمساره داخل src.
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
-// لا توجد إعدادات إضافية حالياً؛ نمرر كائن فارغ.
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  devIndicators: false,
+};
 
 // تصدير الإعداد بعد تغليفه بـ next-intl.
 export default withNextIntl(nextConfig);

@@ -1,7 +1,9 @@
 {
   "Meta": {
     "title": "Islam Safari | Viajes al Oasis de Bahariya y al Desierto Blanco",
-    "description": "Camping y aventuras en 4x4 por el oasis de Bahariya, el Desierto Blanco, la fuente de Heiz y la Montaña de Cristal con guías locales."
+    "description": "Camping y aventuras en 4x4 por el oasis de Bahariya, el Desierto Blanco, la fuente de Heiz y la Montaña de Cristal con guías locales.",
+    "siteName": "Islam Safari",
+    "keywords": ["safari", "viajes al desierto", "oasis de Bahariya", "desierto blanco", "camping", "aventura 4x4", "Egipto"]
   },
   "Common": {
     "day": "Día",
@@ -39,6 +41,9 @@
     "chip1": "4x4 con aire acondicionado",
     "chip2": "Guía local experto",
     "chip3": "Duerme bajo las estrellas",
+    "imageLabel": "Oasis de Bahariya de noche",
+    "imageSubLabel": "Cielo nocturno del desierto",
+    "imageBadge": "Noches del desierto",
     "stat1Value": "7",
     "stat1Label": "idiomas para nuestros huéspedes",
     "stat2Value": "4x4",
@@ -54,6 +59,10 @@
     "campTitle": "Duerme bajo un cielo desértico limpísimo",
     "campText": "Tiendas cómodas, cena a la brasa junto al fuego y un silencio en el que tu corazón habla antes que las estrellas. Ese es el momento inolvidable.",
     "campCta": "Ver la galería",
+    "campImageLabel": "Acampando bajo las estrellas",
+    "campImageSubLabel": "Cielo despejado del desierto",
+    "placesLocationLabel": "Oasis de Bahariya, Egipto",
+    "placesImageHint": "Pulsa para ver detalles",
     "programsBadge": "Nuestros programas",
     "programsTitle": "Viajes para vivirlos",
     "programsSubtitle": "Elige entre una corta noche, una aventura de dos días en el desierto o un día completo entre oasis.",
@@ -229,6 +238,175 @@
           "Gastos personales",
           "Seguro de viaje"
         ]
+      },
+      "white-desert-sunset-camp": {
+        "title": "Campamento del atardecer en el Desierto Blanco",
+        "subtitle": "El Cairo ← Bahariya ← Desierto Blanco",
+        "summary": "El momento más bonito del Desierto Blanco: llegar antes del atardecer, caminar entre las formaciones de tiza y pasar la noche junto a la hoguera bajo un cielo despejado.",
+        "durationLabel": "2 días / 1 noche",
+        "highlights": [
+          "Atardecer mágico entre rocas blancas",
+          "Cena a la parrilla junto al fuego",
+          "Dormir bajo las estrellas",
+          "Amanecer tranquilo en el desierto"
+        ],
+        "days": [
+          {
+            "title": "Día 1: Hacia el Desierto Blanco",
+            "activities": [
+              "Salida desde El Cairo en vehículo con aire acondicionado.",
+              "Cambio a 4x4 rumbo al Desierto Blanco.",
+              "Paseo fotográfico entre las formaciones al atardecer.",
+              "Cena y velada junto a la hoguera."
+            ]
+          },
+          {
+            "title": "Día 2: Amanecer y regreso",
+            "activities": [
+              "Paseo corto con la primera luz.",
+              "Desayuno en el campamento y visita a la fuente de Heiz.",
+              "Regreso a El Cairo."
+            ]
+          }
+        ],
+        "included": [
+          "Transporte en coche con A/A y 4x4",
+          "Estancia en tienda equipada",
+          "Cena, desayuno y agua",
+          "Guía local especializado"
+        ],
+        "excluded": [
+          "Gastos personales",
+          "Entradas si procede"
+        ]
+      },
+      "crystal-mountain-expedition": {
+        "title": "Expedición a la Montaña de Cristal",
+        "subtitle": "Bawiti ← Montaña de Cristal ← Bahariya",
+        "summary": "Una excursión centrada en la fotografía y la naturaleza: rocas de cuarzo brillantes, vistas panorámicas y tiempo de sobra para explorar una de las joyas ocultas del desierto.",
+        "durationLabel": "Día completo",
+        "highlights": [
+          "Formaciones de cuarzo relucientes",
+          "Vista panorámica del oasis",
+          "Guía que explica la geología",
+          "Tiempo suficiente para fotos"
+        ],
+        "days": [
+          {
+            "title": "Mañana en la Montaña de Cristal",
+            "activities": [
+              "Salida temprano desde Bawiti.",
+              "Llegada con explicación geológica.",
+              "Exploración a pie y sesión de fotos."
+            ]
+          },
+          {
+            "title": "Comida en el oasis y regreso",
+            "activities": [
+              "Descanso a la sombra con una bebida fría.",
+              "Visita al mercado de Bawiti.",
+              "Regreso antes del anochecer."
+            ]
+          }
+        ],
+        "included": [
+          "4x4 con conductor",
+          "Guía local",
+          "Agua y bebidas",
+          "Comida ligera"
+        ],
+        "excluded": [
+          "Gastos personales",
+          "Propinas"
+        ]
+      },
+      "black-desert-agabat-trail": {
+        "title": "Desierto Negro y ruta de Agabat",
+        "subtitle": "Bawiti ← Desierto Negro ← Agabat ← Desierto Blanco",
+        "summary": "Contrastes sorprendentes entre rocas volcánicas oscuras, pasadizos esculpidos por el viento y formaciones blancas, en un viaje que mezcla aventura y silencio.",
+        "durationLabel": "3 días / 2 noches",
+        "highlights": [
+          "Contraste entre desierto negro y blanco",
+          "Pasadizos rocosos de Agabat",
+          "Dos noches bajo las estrellas",
+          "Fotos del atardecer y amanecer"
+        ],
+        "days": [
+          {
+            "title": "Día 1: Desierto Negro",
+            "activities": [
+              "Salida de Bawiti hacia las colinas volcánicas.",
+              "Exploración de las formaciones oscuras con fotos.",
+              "Campamento en un lugar tranquilo."
+            ]
+          },
+          {
+            "title": "Día 2: Agabat y Desierto Blanco",
+            "activities": [
+              "Travesía de los pasadizos de Agabat.",
+              "Llegada al Desierto Blanco al atardecer.",
+              "Velada junto al fuego."
+            ]
+          },
+          {
+            "title": "Día 3: Regreso",
+            "activities": [
+              "Amanecer en el Desierto Blanco.",
+              "Visita a la fuente de Heiz.",
+              "Regreso a El Cairo."
+            ]
+          }
+        ],
+        "included": [
+          "4x4 y guía",
+          "Dos noches en tiendas equipadas",
+          "Comidas y agua",
+          "Equipo de campamento"
+        ],
+        "excluded": [
+          "Gastos personales",
+          "Seguro de viaje"
+        ]
+      },
+      "bawiti-oasis-discovery": {
+        "title": "Descubrir el oasis de Bawiti",
+        "subtitle": "Un viaje al corazón de Bahariya",
+        "summary": "Conozca la vida del oasis: palmerales, mercados tradicionales, las aguas cálidas de la fuente de Heiz y cafés con té de menta.",
+        "durationLabel": "Día completo",
+        "highlights": [
+          "Palmerales de Bawiti",
+          "Mercado tradicional",
+          "Baño en la fuente de Heiz",
+          "Té de menta en el oasis"
+        ],
+        "days": [
+          {
+            "title": "Mañana en el oasis",
+            "activities": [
+              "Paseo entre los palmerales.",
+              "Visita al mercado local.",
+              "Probar dátiles y té local."
+            ]
+          },
+          {
+            "title": "Fuente de Heiz y relax",
+            "activities": [
+              "Baño en aguas cálidas.",
+              "Comida en el oasis.",
+              "Regreso a Bawiti."
+            ]
+          }
+        ],
+        "included": [
+          "Transporte en el oasis",
+          "Guía local",
+          "Agua",
+          "Comida ligera"
+        ],
+        "excluded": [
+          "Gastos personales",
+          "Entradas si procede"
+        ]
       }
     }
   },
@@ -254,16 +432,18 @@
   "Gallery": {
     "badge": "Galería de fotos y vídeo",
     "title": "Momentos del corazón del desierto",
-    "subtitle": "Fotos de campamentos, fuentes y formaciones rocosas. Sustituye estas imágenes de ejemplo por tus propias fotos.",
+    "subtitle": "Momentos reales de nuestros viajes: campamentos, fuentes, formaciones desérticas y cada imagen que merece guardarse.",
     "all": "Todos",
     "camping": "Camping",
     "desert": "Desierto",
     "oasis": "Oasis",
     "video": "Vídeo",
     "videoTitle": "Un vídeo de nuestro viaje",
-    "videoNote": "Añade aquí tu archivo o enlace de vídeo para mostrarlo en este recuadro.",
+    "videoNote": "Un corto de nuestro viaje por el oasis de Bahariya.",
     "clickToZoom": "Haz clic para ampliar",
     "close": "Cerrar",
+    "photo": "Foto del viaje {number}",
+    "brandLogo": "Logo de Islam Safari",
     "items": {
       "campfire": "Noche junto a la fogata",
       "tent": "Tiendas bajo las estrellas",
@@ -292,6 +472,8 @@
     "whatsappTitle": "WhatsApp",
     "whatsappText": "La forma más rápida de reservar y preguntar.",
     "whatsappButton": "Iniciar chat de WhatsApp",
+    "phoneTitle": "Teléfono",
+    "emailTitle": "Correo electrónico",
     "locationTitle": "Dónde estamos",
     "locationText": "Oasis de Bahariya, gobernación de Giza, Egipto",
     "hoursTitle": "Horario de respuesta",

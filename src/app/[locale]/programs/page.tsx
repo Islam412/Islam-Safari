@@ -7,6 +7,7 @@ import { Compass, Sparkles } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ProgramCard from '@/components/programs/ProgramCard';
 import { programs } from '@/data/content';
+import { pageMetadata } from '@/lib/seo';
 
 // بيانات ميتا للصفحة حسب اللغة.
 export async function generateMetadata({
@@ -21,7 +22,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Programs' });
 
   // إرجاع العنوان والوصف.
-  return { title: t('title'), description: t('subtitle') };
+  return pageMetadata({ locale, path: '/programs', title: t('title'), description: t('subtitle') });
 }
 
 // المكوّن: شبكة البرامج + ملاحظة التخصيص.
@@ -40,19 +41,19 @@ export default async function ProgramsPage({
 
   return (
     // محتوى الصفحة.
-    <div className="py-10">
+    <div className="py-8 sm:py-10">
       {/* عنوان الصفحة */}
       <SectionHeading badge={t('badge')} title={t('title')} subtitle={t('subtitle')} />
 
       {/* شبكة البرامج */}
-      <div className="mt-14 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-10 grid gap-5 sm:mt-14 sm:gap-7 md:grid-cols-2 xl:grid-cols-3">
         {programs.map((program, index) => (
           <ProgramCard key={program.slug} program={program} index={index} />
         ))}
       </div>
 
       {/* ملاحظة أسفل الشبكة */}
-      <div className="mt-14 flex flex-col items-center gap-4 rounded-3xl border border-gold-500/20 bg-gold-500/5 px-6 py-8 text-center sm:flex-row sm:text-start">
+      <div className="mt-10 flex flex-col items-center gap-4 rounded-3xl border border-gold-500/20 bg-gold-500/5 px-5 py-7 text-center sm:mt-14 sm:flex-row sm:px-6 sm:py-8 sm:text-start">
         <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gold-500/15 text-gold-600 dark:text-gold-300">
           <Sparkles className="size-6" />
         </span>

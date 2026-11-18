@@ -1,51 +1,67 @@
-/* eslint-disable @next/next/no-img-element */
-// معرض الصور والفيديو: فلاتر + لايت بوكس + بطاقة فيديو تجريبية.
 'use client';
 
-// استيراد المكتبات.
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Play, X, ZoomIn } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Images, Play, X, ZoomIn } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-// بيانات المعرض.
-import { galleryItems, type GalleryItem } from '@/data/content';
+import { galleryItems, siteImages, type GalleryItem } from '@/data/content';
 
-// أنواع التصنيفات المتاحة في الفلاتر.
 type FilterKey = 'all' | 'camping' | 'desert' | 'oasis' | 'video';
 
-// المكوّن.
 export default function GalleryGrid() {
-  // ترجمات المعرض.
   const t = useTranslations('Gallery');
-  // التصنيف النشط.
   const [filter, setFilter] = useState<FilterKey>('all');
-  // الصورة المفتوحة في اللايت بوكس (null تعني مغلق).
-  const [selected, setSelected] = useState<GalleryItem | null>(null);
-  // هل تم فتح نافذة الفيديو التجريبية؟
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [videoOpen, setVideoOpen] = useState(false);
 
-  // إغلاق أي نافذة منبثقة عند الضغط على Escape.
-  useEffect(() => {
-    function handleKey(event: KeyboardEvent) {
-      // إذا كان المفتاح Escape نغلق النوافذ.
-      if (event.key === 'Escape') {
-        setSelected(null);
-        setVideoOpen(false);
-      }
-    }
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, []);
+  const showPhotos = filter !== 'video';
+  const showVideo = filter === 'all' || filter === 'video';
 
-  // تصفية الصور حسب التصنيف المختار.
   const visibleItems =
-    // إذا كان التصنيف "الكل" أو "فيديو" نعرض كل الصور، وإلا نعرض الصور المطابقة.
     filter === 'all' || filter === 'video'
       ? galleryItems
       : galleryItems.filter((item) => item.category === filter);
 
-  // قائمة الفلاتر مع مفاتيح الترجمة.
+  const caption = useCallback(
+    (item: GalleryItem) =>
+      item.key === 'brandLogo'
+        ? t('brandLogo')
+        : t('photo', { number: Number(item.key.replace('photo', '')) }),
+    [t],
+  );
+
+  const closeLightbox = useCallback(() => setSelectedIndex(null), []);
+  const step = useCallback(
+    (direction: number) => {
+      setSelectedIndex((current) =>
+        current === null ? null : (current + direction + visibleItems.length) % visibleItems.length,
+      );
+    },
+    [visibleItems.length],
+  );
+
+  useEffect(() => {
+    function handleKey(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setSelectedIndex(null);
+        setVideoOpen(false);
+      }
+      if (selectedIndex !== null && event.key === 'ArrowLeft') step(1);
+      if (selectedIndex !== null && event.key === 'ArrowRight') step(-1);
+    }
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [selectedIndex, step]);
+
+  useEffect(() => {
+    document.body.style.overflow = selectedIndex !== null || videoOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedIndex, videoOpen]);
+
   const filters: { key: FilterKey; label: string }[] = [
     { key: 'all', label: t('all') },
     { key: 'camping', label: t('camping') },
@@ -54,135 +70,201 @@ export default function GalleryGrid() {
     { key: 'video', label: t('video') },
   ];
 
+  const selected = selectedIndex !== null ? visibleItems[selectedIndex] : null;
+
   return (
-    // محتوى المعرض.
     <div>
-      {/* أزرار الفلاتر */}
-      <div className="mt-10 flex flex-wrap justify-center gap-2">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:mt-10">
         {filters.map((item) => (
           <button
             key={item.key}
-            onClick={() => setFilter(item.key)}
-            className={`rounded-full px-5 py-2.5 text-sm font-bold transition-all ${
+            onClick={() => {
+              setFilter(item.key);
+              setSelectedIndex(null);
+            }}
+            className={`relative rounded-full px-3.5 py-2 text-xs font-bold transition-colors sm:px-5 sm:py-2.5 sm:text-[13px] ${
               filter === item.key
-                ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-night-950 shadow-lg shadow-gold-500/20'
-                : 'border border-sand-700/15 bg-white/60 text-sand-700 hover:border-gold-500/50 dark:border-sand-200/15 dark:bg-night-800/60 dark:text-sand-200'
+                 ? 'border border-transparent text-night-950'
+
+                : 'border border-sand-700/15 bg-white/60 text-sand-700 hover:border-gold-500/50 dark:border-teal-300/15 dark:bg-night-800/60 dark:text-sand-200'
             }`}
           >
-            {item.label}
+            {filter === item.key ? (
+              <motion.span
+                layoutId="gallery-filter"
+                transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-gold-400 to-coral-400 shadow-lg shadow-gold-500/20"
+              />
+            ) : null}
+            <span className="relative z-10">{item.label}</span>
           </button>
         ))}
+        <span className="ms-1 inline-flex items-center gap-1.5 rounded-full border border-teal-500/20 bg-teal-500/10 px-3 py-2 text-[10px] font-bold text-teal-700 sm:ms-2 sm:text-[11px] dark:text-teal-300">
+          <Images className="size-3.5" />
+          {showPhotos ? `${galleryItems.length} photos` : '01 video'}
+        </span>
       </div>
 
-      {/* شبكة الصور */}
-      <motion.div layout className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {/* صور المعرض */}
-        {visibleItems.map((item) => (
-          <motion.button
-            // إعادة ترتيب أنيقة عند تغيير الفلتر.
-            layout
-            key={item.key}
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.94 }}
-            whileHover={{ y: -6 }}
-            onClick={() => setSelected(item)}
-            className="group relative h-64 overflow-hidden rounded-3xl border border-sand-700/10 text-start dark:border-sand-200/10"
-          >
-            {/* الصورة */}
-            <img src={item.image} alt={t(`items.${item.key}`)} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            {/* تدرج وأيقونة تكبير */}
-            <div className="absolute inset-0 bg-gradient-to-t from-night-950/85 via-transparent to-transparent" />
-            <span className="absolute top-4 end-4 grid size-9 place-items-center rounded-full bg-white/85 text-night-950 opacity-0 transition-opacity group-hover:opacity-100">
-              <ZoomIn className="size-4" />
-            </span>
-            {/* عنوان الصورة */}
-            <span className="absolute inset-x-0 bottom-0 p-5 text-sm font-bold text-white">{t(`items.${item.key}`)}</span>
-          </motion.button>
-        ))}
-
-        {/* بطاقة الفيديو تظهر مع "الكل" أو "فيديو" */}
-        {filter === 'all' || filter === 'video' ? (
+            <motion.div layout className="mt-8 grid grid-cols-2 gap-2 sm:mt-12 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
+                {showVideo ? (
           <motion.button
             layout
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             whileHover={{ y: -6 }}
             onClick={() => setVideoOpen(true)}
-            className="group relative h-64 overflow-hidden rounded-3xl border border-gold-500/25 bg-night-900 text-start"
+            className="group relative col-span-2 row-span-1 aspect-[16/10] overflow-hidden rounded-2xl border border-gold-400/25 text-start sm:col-span-2 sm:rounded-3xl lg:col-span-2"
           >
-            {/* صورة الغلاف للفيديو */}
-            <img src="/images/video.svg" alt={t('videoTitle')} className="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110" />
-            {/* زر التشغيل */}
+            <Image
+              src={siteImages.videoPoster}
+              alt={t('videoTitle')}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover opacity-80 transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/20 to-transparent" />
             <span className="absolute inset-0 grid place-items-center">
-              <span className="grid size-16 place-items-center rounded-full bg-gold-500 text-night-950 shadow-xl transition-transform group-hover:scale-110">
-                <Play className="size-7 fill-current" />
+              <span className="grid size-14 place-items-center rounded-full bg-gradient-to-br from-gold-400 to-coral-500 text-night-950 shadow-xl transition-transform duration-300 group-hover:scale-110 sm:size-16">
+                <Play className="size-6 fill-current sm:size-7" />
               </span>
             </span>
-            <span className="absolute inset-x-0 bottom-0 p-5 text-sm font-bold text-white">{t('videoTitle')}</span>
+            <span className="absolute inset-x-0 bottom-0 p-4 text-sm font-extrabold text-white sm:p-5 sm:text-base">
+              {t('videoTitle')}
+            </span>
           </motion.button>
         ) : null}
+
+                {showPhotos
+          ? visibleItems.map((item, index) => (
+              <motion.button
+                layout
+                key={item.key}
+                initial={{ opacity: 0, scale: 0.94 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.94 }}
+                whileHover={{ y: -5 }}
+                transition={{ delay: Math.min(index, 12) * 0.03 }}
+                onClick={() => setSelectedIndex(index)}
+                className="group relative aspect-square min-w-0 overflow-hidden rounded-2xl border border-sand-700/10 text-start sm:rounded-3xl dark:border-teal-300/10"
+              >
+                <Image
+                  src={item.image}
+                  alt={caption(item)}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-night-950/80 via-transparent to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
+                <span className="absolute top-3 end-3 grid size-8 place-items-center rounded-full bg-white/90 text-night-950 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                  <ZoomIn className="size-3.5" />
+                </span>
+                <span className="absolute inset-x-1.5 bottom-1.5 line-clamp-2 rounded-xl border border-white/15 bg-night-950/35 p-2 text-[9px] font-bold leading-4 text-white backdrop-blur-md transition-colors group-hover:border-gold-400/40 sm:inset-x-3 sm:bottom-3 sm:p-3 sm:text-xs sm:leading-5">
+                  {caption(item)}
+                </span>
+              </motion.button>
+            ))
+          : null}
       </motion.div>
 
-      {/* لايت بوكس الصور */}
-      <AnimatePresence>
+            <AnimatePresence>
         {selected ? (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelected(null)}
-            className="fixed inset-0 z-[100] grid place-items-center bg-night-950/90 p-5 backdrop-blur-md"
+            onClick={closeLightbox}
+            className="fixed inset-0 z-[100] grid place-items-center overflow-y-auto bg-night-950/95 p-3 backdrop-blur-xl sm:p-8"
           >
-            {/* زر الإغلاق */}
             <button
-              onClick={() => setSelected(null)}
+              onClick={closeLightbox}
               aria-label={t('close')}
-              className="absolute top-6 end-6 grid size-11 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-gold-500 hover:text-night-950"
+              className="fixed top-3 end-3 z-20 grid size-10 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition-colors hover:bg-gold-500 hover:text-night-950 sm:top-5 sm:end-5 sm:size-11"
             >
               <X className="size-5" />
             </button>
-            {/* الصورة الكبيرة */}
-            <motion.img
-              src={selected.image}
-              alt={t(`items.${selected.key}`)}
-              initial={{ scale: 0.92, opacity: 0 }}
+            {visibleItems.length > 1 ? (
+              <>
+                <button
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    step(-1);
+                  }}
+                  aria-label="Previous"
+                  className="absolute start-1 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition-colors hover:bg-gold-500 hover:text-night-950 sm:start-8 sm:size-11"
+                >
+                  <ChevronLeft className="size-4 rtl:rotate-180 sm:size-5" />
+                </button>
+                <button
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    step(1);
+                  }}
+                  aria-label="Next"
+                  className="absolute end-1 top-1/2 z-10 grid size-9 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition-colors hover:bg-gold-500 hover:text-night-950 sm:end-8 sm:size-11"
+                >
+                  <ChevronRight className="size-4 rtl:rotate-180 sm:size-5" />
+                </button>
+              </>
+            ) : null}
+            <motion.div
+              key={selected.key}
+              initial={{ scale: 0.94, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.92, opacity: 0 }}
+              exit={{ scale: 0.94, opacity: 0 }}
               onClick={(event) => event.stopPropagation()}
-              className="max-h-[82vh] w-full max-w-4xl rounded-3xl border border-gold-500/25 object-cover shadow-2xl"
-            />
-            {/* عنوان الصورة */}
-            <p className="absolute bottom-8 text-center text-sm font-bold text-sand-100">{t(`items.${selected.key}`)}</p>
+              className="relative my-12 h-[52vh] w-full max-w-5xl sm:my-0 sm:h-[72vh]"
+            >
+              <Image
+                src={selected.image}
+                alt={caption(selected)}
+                fill
+                sizes="100vw"
+                className="object-contain"
+                loading="eager"
+              />
+            </motion.div>
+            <p className="absolute bottom-3 line-clamp-2 w-full px-12 text-center text-xs font-bold text-sand-100 sm:bottom-6 sm:text-sm">
+              {caption(selected)} — {selectedIndex! + 1} / {visibleItems.length}
+            </p>
           </motion.div>
         ) : null}
       </AnimatePresence>
 
-      {/* نافذة الفيديو التجريبية */}
-      <AnimatePresence>
+            <AnimatePresence>
         {videoOpen ? (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setVideoOpen(false)}
-            className="fixed inset-0 z-[100] grid place-items-center bg-night-950/90 p-5 backdrop-blur-md"
+            className="fixed inset-0 z-[100] grid place-items-center overflow-y-auto bg-night-950/95 p-3 backdrop-blur-xl sm:p-4"
           >
             <motion.div
-              initial={{ scale: 0.94 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.94 }}
+              initial={{ scale: 0.94, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.94, y: 20 }}
               onClick={(event) => event.stopPropagation()}
-              className="w-full max-w-2xl rounded-3xl border border-gold-500/25 bg-night-900 p-6 text-center text-white"
+              className="my-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-gold-400/25 bg-night-900 p-3 shadow-2xl sm:rounded-3xl sm:p-5"
             >
-              <div className="flex justify-end">
-                <button onClick={() => setVideoOpen(false)} aria-label={t('close')} className="grid size-9 place-items-center rounded-full bg-white/10 hover:bg-gold-500 hover:text-night-950">
+              <div className="flex items-center justify-between gap-4 px-2 pb-3">
+                <h3 className="text-base font-extrabold text-white sm:text-lg">{t('videoTitle')}</h3>
+                <button
+                  onClick={() => setVideoOpen(false)}
+                  aria-label={t('close')}
+                  className="grid size-9 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-gold-500 hover:text-night-950"
+                >
                   <X className="size-4" />
                 </button>
               </div>
-              <Play className="mx-auto size-12 text-gold-400" />
-              <h3 className="mt-4 text-xl font-black">{t('videoTitle')}</h3>
-              <p className="mt-3 text-sm leading-7 text-sand-200/65">{t('videoNote')}</p>
+              <video
+                src={siteImages.video}
+                poster={siteImages.videoPoster}
+                controls
+                autoPlay
+                playsInline
+                className="aspect-video w-full rounded-2xl bg-black object-contain"
+              />
+              <p className="px-2 pt-3 text-center text-xs leading-6 text-sand-200/60">{t('videoNote')}</p>
             </motion.div>
           </motion.div>
         ) : null}

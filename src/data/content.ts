@@ -1,97 +1,112 @@
-// بيانات الموقع غير النصية: أسماء ملفات الصور، التصنيفات، وترتيب العناصر.
-// النصوص نفسها كلها في ملفات messages/<locale>.json حتى يسهل ترجمتها.
 
-// تعريف شكل.element الذي يمثل مكاناً سياحياً.
 export type Place = {
-  // مفتاح فريد يستخدم لجلب العنوان والوصف من ملف الترجمة.
   key: string;
-  // صورة المكان من مجلد public/images (placeholder قابل للاستبدال).
   image: string;
-  // تصنيف المكان يستخدم في معرض الصور.
   category: 'desert' | 'oasis' | 'camping';
+  icon: 'whiteDesert' | 'heizSpring' | 'crystalMountain' | 'blackDesert' | 'agabat' | 'bawiti';
 };
-
-// أفضل الأماكن في الواحات البحرية والصحراء الغربية.
 export const places: Place[] = [
-  // الصحراء البيضاء: أشهر تشكيلات الحجر الجيري في مصر.
-  { key: 'whiteDesert', image: '/images/white-desert.svg', category: 'desert' },
-  // عين هيز: ينابيع مائية دافئة وسط الصحراء.
-  { key: 'heizSpring', image: '/images/heiz-spring.svg', category: 'oasis' },
-  // جبل الكريستال: صخور كوارتز لامعة.
-  { key: 'crystalMountain', image: '/images/crystal-mountain.svg', category: 'desert' },
-  // الصحراء السوداء: صخور بركانية داكنة.
-  { key: 'blackDesert', image: '/images/black-desert.svg', category: 'desert' },
-  // العجابات: منطقة الصخور المنحوتة بين باويتي والصحراء البيضاء.
-  { key: 'agabat', image: '/images/agabat.svg', category: 'desert' },
-  // باويتي: عاصمة الواحات البحرية والأسواق الشعبية.
-  { key: 'bawiti', image: '/images/bawiti.svg', category: 'oasis' },
+  { key: 'whiteDesert', image: '/images/white-desert.webp', category: 'desert', icon: 'whiteDesert' },
+  { key: 'heizSpring', image: '/images/heiz-spring.webp', category: 'oasis', icon: 'heizSpring' },
+  { key: 'crystalMountain', image: '/images/crystal-mountain.webp', category: 'desert', icon: 'crystalMountain' },
+  { key: 'blackDesert', image: '/images/black-desert.webp', category: 'desert', icon: 'blackDesert' },
+  { key: 'agabat', image: '/images/agabat.webp', category: 'desert', icon: 'agabat' },
+  { key: 'bawiti', image: '/images/bawiti.webp', category: 'oasis', icon: 'bawiti' },
 ];
+export const siteImages = {
+  hero: '/images/hero-night.webp',
+  heroDetail: '/images/hero-night-detail.webp',
+  nightCamp: '/images/hero-night.webp',
+  nightSky: '/images/hero-night-detail.webp',
+  campfire: '/images/campfire.webp',
+  about: '/images/about.webp',
+  panorama: '/images/panorama.webp',
+  videoPoster: '/images/video-poster.webp',
+  video: '/images/WhatsApp%20Video%202026-11-16%20at%202.33.23%20AM.mp4',
+  logo: '/images/logo.webp',
+} as const;
 
-// تعريف شكل البرنامج: البيانات الهيكلية فقط، والمحتوى اللغوي في ملفات الترجمة.
 export type Program = {
-  // معرف ثابت يظهر في الرابط ويستخدم كمفتاح في ملف الترجمة.
   slug: string;
-  // صورة الغلاف.
   image: string;
-  // عدد الليالي (رقم يستخدم في الشارة فوق البطاقة).
   nights: number;
-  // تصنيف البرنامج.
   category: 'desert' | 'oasis' | 'daytrip';
-  // هل يظهر في الصفحة الرئيسية كبرنامج مميز؟
   featured: boolean;
 };
 
-// البرامج الثلاثة: أول برنامجين من تفاصيل العميل + برنامج نهاري مكمّل.
 export const programs: Program[] = [
-  // PROGRAM 1: ليلة واحدة في الواحة والصحراء.
   {
     slug: 'oasis-and-desert-1-night',
-    image: '/images/white-desert.svg',
+    image: '/images/white-desert.webp',
     nights: 1,
     category: 'desert',
     featured: true,
   },
-  // PROGRAM 2: مغامرة ليلتين في الواحات البحرية.
   {
     slug: 'two-nights-oasis-adventure',
-    image: '/images/camping.svg',
+    image: '/images/campfire.webp',
     nights: 2,
     category: 'oasis',
     featured: true,
   },
-  // برنامج نهاري قصير يناسب من لديه وقت محدود.
   {
     slug: 'oasis-day-escape',
-    image: '/images/heiz-spring.svg',
+    image: '/images/heiz-spring.webp',
     nights: 0,
     category: 'daytrip',
     featured: false,
   },
+  {
+    slug: 'white-desert-sunset-camp',
+    image: '/images/white-desert.webp',
+    nights: 1,
+    category: 'desert',
+    featured: true,
+  },
+  {
+    slug: 'crystal-mountain-expedition',
+    image: '/images/crystal-mountain.webp',
+    nights: 0,
+    category: 'desert',
+    featured: true,
+  },
+  {
+    slug: 'black-desert-agabat-trail',
+    image: '/images/black-desert.webp',
+    nights: 2,
+    category: 'desert',
+    featured: false,
+  },
+  {
+    slug: 'bawiti-oasis-discovery',
+    image: '/images/bawiti.webp',
+    nights: 0,
+    category: 'oasis',
+    featured: false,
+  },
 ];
 
-// صور المعرض: كل عنصر له مفتاح ترجمة وتصنيف لفلترة المعرض.
 export type GalleryItem = {
-  // مفتاح caption الصورة في ملف الترجمة.
   key: string;
-  // مسار الصورة.
   image: string;
-  // التصنيف المستخدم في الفلاتر.
   category: 'camping' | 'desert' | 'oasis';
 };
-
-// معرض الصور — يمكن استبدال الـ placeholders بصورك الحقيقية بنفس الأسماء.
-export const galleryItems: GalleryItem[] = [
-  { key: 'campfire', image: '/images/campfire.svg', category: 'camping' },
-  { key: 'tent', image: '/images/camping.svg', category: 'camping' },
-  { key: 'whiteDesert', image: '/images/white-desert.svg', category: 'desert' },
-  { key: 'jeep', image: '/images/safari-jeep.svg', category: 'desert' },
-  { key: 'spring', image: '/images/heiz-spring.svg', category: 'oasis' },
-  { key: 'palms', image: '/images/bawiti.svg', category: 'oasis' },
-  { key: 'crystal', image: '/images/crystal-mountain.svg', category: 'desert' },
-  { key: 'nightSky', image: '/images/stars.svg', category: 'camping' },
+const photoCategories: GalleryItem['category'][] = [
+  'oasis', 'oasis', 'oasis', 'desert', 'oasis', 'desert', 'desert', 'desert', 'desert', 'desert',
+  'desert', 'desert', 'desert', 'desert', 'desert', 'desert', 'desert', 'desert', 'desert', 'camping',
+  'desert', 'desert', 'camping', 'desert', 'desert', 'camping', 'oasis', 'desert', 'camping', 'camping',
+  'camping', 'oasis', 'desert', 'desert', 'desert', 'desert', 'camping', 'camping', 'desert', 'desert',
+  'desert', 'desert', 'desert', 'desert', 'camping',
 ];
+export const galleryItems: GalleryItem[] = photoCategories.map((category, index) => {
+  const number = index + 1;
+  return {
+    key: number === 45 ? 'brandLogo' : `photo${String(number).padStart(2, '0')}`,
+    image: `/images/photo-${String(number).padStart(2, '0')}.webp`,
+    category,
+  };
+});
 
-// مميزات إسلام سفاري التي تظهر في الصفحة الرئيسية.
 export const features = [
   { key: 'localGuide', icon: 'compass' },
   { key: 'comfort', icon: 'tent' },
@@ -99,7 +114,6 @@ export const features = [
   { key: 'memories', icon: 'camera' },
 ] as const;
 
-// قيم الفريق التي تظهر في صفحة من نحن.
 export const values = [
   { key: 'passion', icon: 'heart' },
   { key: 'detail', icon: 'sparkles' },

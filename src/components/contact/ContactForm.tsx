@@ -65,58 +65,58 @@ export default function ContactForm() {
 
   return (
     // بطاقة النموذج.
-    <div className="rounded-[2rem] border border-sand-700/10 bg-white/70 p-6 shadow-xl shadow-sand-800/5 sm:p-9 dark:border-sand-200/10 dark:bg-night-800/60 dark:shadow-black/30">
+    <div className="min-w-0 rounded-[1.5rem] border border-sand-700/10 bg-white/70 p-5 shadow-xl shadow-sand-800/5 sm:rounded-[2rem] sm:p-9 dark:border-sand-200/10 dark:bg-night-800/60 dark:shadow-black/30">
       {/* عنوان النموذج */}
-      <h2 className="text-2xl font-black text-sand-900 dark:text-sand-50">{t('title')}</h2>
+      <h2 className="text-xl font-black text-sand-900 sm:text-2xl dark:text-sand-50">{t('title')}</h2>
       <p className="mt-2 text-sm leading-7 text-sand-700/70 dark:text-sand-200/60">{t('subtitle')}</p>
 
       {/* الحقول */}
-      <form onSubmit={handleSubmit} className="mt-8 grid gap-5 sm:grid-cols-2">
+      <form onSubmit={handleSubmit} className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5">
         {/* الاسم */}
-        <label className="flex flex-col gap-2">
+        <label className="flex min-w-0 flex-col gap-2">
           <span className="text-xs font-black text-sand-800 dark:text-sand-100">{t('name')} *</span>
           <input
             type="text"
             value={name}
             onChange={(event) => setName(event.target.value)}
             placeholder={t('namePlaceholder')}
-            className="rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
+            className="w-full min-w-0 rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
           />
         </label>
 
         {/* البريد */}
-        <label className="flex flex-col gap-2">
+        <label className="flex min-w-0 flex-col gap-2">
           <span className="text-xs font-black text-sand-800 dark:text-sand-100">{t('email')}</span>
           <input
             type="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder={t('emailPlaceholder')}
-            className="rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
+            className="w-full min-w-0 rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
           />
         </label>
 
         {/* الهاتف */}
-        <label className="flex flex-col gap-2 sm:col-span-2">
+        <label className="flex min-w-0 flex-col gap-2 sm:col-span-2">
           <span className="text-xs font-black text-sand-800 dark:text-sand-100">{t('phone')}</span>
           <input
             type="tel"
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
             placeholder={t('phonePlaceholder')}
-            className="rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
+            className="w-full min-w-0 rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
           />
         </label>
 
         {/* الرسالة */}
-        <label className="flex flex-col gap-2 sm:col-span-2">
+        <label className="flex min-w-0 flex-col gap-2 sm:col-span-2">
           <span className="text-xs font-black text-sand-800 dark:text-sand-100">{t('message')} *</span>
           <textarea
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             placeholder={t('messagePlaceholder')}
             rows={5}
-            className="resize-none rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
+            className="w-full min-w-0 resize-none rounded-2xl border border-sand-700/15 bg-white/70 px-4 py-3 text-sm text-sand-900 outline-none transition-colors focus:border-gold-500 dark:border-sand-200/15 dark:bg-night-900/60 dark:text-sand-50"
           />
         </label>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
         <div className="sm:col-span-2">
           <button
             type="submit"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-7 py-3.5 text-sm font-black text-night-950 transition-transform hover:scale-105"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-6 py-3.5 text-sm font-black text-night-950 transition-transform hover:scale-105 sm:w-auto sm:px-7"
           >
             <Send className="size-4" />
             {t('send')}
@@ -146,7 +146,7 @@ export default function ContactForm() {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-gold-500 px-5 py-2.5 text-xs font-black text-night-950 transition-transform hover:scale-105"
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-5 py-2.5 text-xs font-black text-night-950 transition-transform hover:scale-105 sm:w-auto"
             >
               <MessageCircle className="size-4" />
               {t('whatsappButton')}

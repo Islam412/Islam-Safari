@@ -1,13 +1,14 @@
 // صفحة تواصل معنا: معلومات التواصل + نموذج يرسل عبر واتساب.
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Clock, MapPin, MessageCircle, Play, Users, Camera } from 'lucide-react';
+import { Clock, Mail, MapPin, MessageCircle, Phone, Play, Users, Camera } from 'lucide-react';
 
 // مكوّنات المشروع.
 import SectionHeading from '@/components/ui/SectionHeading';
 import Reveal from '@/components/ui/Reveal';
 import ContactForm from '@/components/contact/ContactForm';
-import { socialLinks } from '@/lib/site';
+import { pageMetadata } from '@/lib/seo';
+import { contact, socialLinks } from '@/lib/site';
 
 // بيانات ميتا.
 export async function generateMetadata({
@@ -21,7 +22,7 @@ export async function generateMetadata({
   // الترجمات.
   const t = await getTranslations({ locale, namespace: 'Contact' });
   // العنوان والوصف.
-  return { title: t('title'), description: t('subtitle') };
+  return pageMetadata({ locale, path: '/contact', title: t('title'), description: t('subtitle') });
 }
 
 // المكوّن.
@@ -42,6 +43,8 @@ export default async function ContactPage({
   const infoCards = [
     // واتساب.
     { Icon: MessageCircle, title: t('whatsappTitle'), text: t('whatsappText'), href: socialLinks.whatsapp },
+    { Icon: Phone, title: t('phoneTitle'), text: contact.phone, href: contact.phoneLink },
+    { Icon: Mail, title: t('emailTitle'), text: contact.email, href: contact.emailLink },
     // الموقع.
     { Icon: MapPin, title: t('locationTitle'), text: t('locationText'), href: '' },
     // أوقات الرد.
@@ -51,6 +54,8 @@ export default async function ContactPage({
   // روابط السوشيال.
   const socials = [
     { label: 'WhatsApp', href: socialLinks.whatsapp, Icon: MessageCircle },
+    { label: 'Phone', href: contact.phoneLink, Icon: Phone },
+    { label: 'Gmail', href: contact.emailLink, Icon: Mail },
     { label: 'Facebook', href: socialLinks.facebook, Icon: Users },
     { label: 'Instagram', href: socialLinks.instagram, Icon: Camera },
     { label: 'TikTok', href: socialLinks.tiktok, Icon: Play },
@@ -58,12 +63,12 @@ export default async function ContactPage({
 
   return (
     // محتوى الصفحة.
-    <div className="py-10">
+    <div className="py-8 sm:py-10">
       {/* العنوان */}
       <SectionHeading badge={t('badge')} title={t('title')} subtitle={t('subtitle')} />
 
       {/* الشبكة */}
-      <div className="mt-14 grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="mt-10 grid gap-8 sm:mt-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
         {/* العمود الأول: بطاقات المعلومات */}
         <Reveal>
           <div className="space-y-5">
@@ -76,7 +81,7 @@ export default async function ContactPage({
                     <Icon className="size-6" />
                   </span>
                   {/* النص */}
-                  <span>
+                  <span className="min-w-0 break-words">
                     <span className="block text-base font-black text-sand-900 dark:text-sand-50">{title}</span>
                     <span className="mt-1 block text-sm leading-7 text-sand-700/70 dark:text-sand-200/60">{text}</span>
                   </span>
@@ -91,7 +96,7 @@ export default async function ContactPage({
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 rounded-3xl border border-sand-700/10 bg-white/60 p-6 transition-all hover:-translate-y-1 hover:border-gold-500/40 dark:border-sand-200/10 dark:bg-night-800/55"
+                  className="flex items-start gap-3 rounded-3xl border border-sand-700/10 bg-white/60 p-5 transition-all hover:-translate-y-1 hover:border-gold-500/40 sm:gap-4 sm:p-6 dark:border-sand-200/10 dark:bg-night-800/55"
                 >
                   {content}
                 </a>
@@ -99,7 +104,7 @@ export default async function ContactPage({
                 // بطاقة غير قابلة للضغط.
                 <div
                   key={title}
-                  className="flex items-start gap-4 rounded-3xl border border-sand-700/10 bg-white/60 p-6 dark:border-sand-200/10 dark:bg-night-800/55"
+                  className="flex items-start gap-3 rounded-3xl border border-sand-700/10 bg-white/60 p-5 sm:gap-4 sm:p-6 dark:border-sand-200/10 dark:bg-night-800/55"
                 >
                   {content}
                 </div>
@@ -107,7 +112,7 @@ export default async function ContactPage({
             })}
 
             {/* روابط السوشيال */}
-            <div className="rounded-3xl border border-sand-700/10 bg-white/60 p-6 dark:border-sand-200/10 dark:bg-night-800/55">
+            <div className="rounded-3xl border border-sand-700/10 bg-white/60 p-5 sm:p-6 dark:border-sand-200/10 dark:bg-night-800/55">
               <p className="text-sm font-black text-sand-900 dark:text-sand-50">{t('socialTitle')}</p>
               <div className="mt-4 flex flex-wrap gap-3">
                 {socials.map(({ label, href, Icon }) => (
@@ -116,7 +121,7 @@ export default async function ContactPage({
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-sand-700/15 px-4 py-2 text-xs font-bold text-sand-700 transition-colors hover:border-gold-500/50 hover:text-gold-600 dark:border-sand-200/15 dark:text-sand-200 dark:hover:text-gold-300"
+                    className="inline-flex max-w-full items-center gap-2 rounded-full border border-sand-700/15 px-3 py-2 text-xs font-bold text-sand-700 transition-colors hover:border-gold-500/50 hover:text-gold-600 sm:px-4 dark:border-sand-200/15 dark:text-sand-200 dark:hover:text-gold-300"
                   >
                     <Icon className="size-4" />
                     {label}

@@ -21,7 +21,7 @@ export default function NotFound() {
         {/* رمز الخطأ */}
         <h1 className="mt-6 text-6xl font-black text-gradient">404</h1>
         {/* الرسالة */}
-        <p className="mt-4 text-xl font-black text-sand-900 dark:text-sand-50">{t('notFound')}</p>
+        <p className="mt-4 text-lg font-black text-sand-900 sm:text-xl dark:text-sand-50">{t('notFound')}</p>
         <p className="mt-2 text-sm text-sand-700/70 dark:text-sand-200/60">{t('notFoundText')}</p>
         {/* زر العودة */}
         <Link
